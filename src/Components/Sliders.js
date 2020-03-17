@@ -49,14 +49,12 @@ const useStyles = makeStyles(theme => ({
   function valuetext(value) {
     return `${value}`;
   }
-  function onChange(event,value){
-    console.log(value);
-  }
+  
 
 export default function Sliders(props){
     const classes = useStyles();
     return(
-<Paper className={classes.paper}>
+<Paper className={classes.paper} >
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item xs >
           <div className={classes.margin} />

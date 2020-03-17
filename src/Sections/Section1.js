@@ -1,10 +1,10 @@
 import React from 'react';
-import {Grid,Box, Typography} from '@material-ui/core';
+import {Grid,Box,Paper} from '@material-ui/core';
 import Sliders from '../Components/Sliders';
 import NextButton from '../Components/NextButton';
-import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import ButtonAppBar from '../Components/AppBar';   
-  export default class Section1 extends React.Component {
+import SimplePaper from '../Components/Description';
+export default class Section1 extends React.Component {
       state={
           slider1:1,
           slider2:1,
@@ -141,12 +141,10 @@ import ButtonAppBar from '../Components/AppBar';
         borderColor: 'grey.500',
       };
       
-      let theme = createMuiTheme();
-      theme = responsiveFontSizes(theme);
-      
     return (
       <div>
           <ButtonAppBar AppBarText={'BIG FIVE FACTOR THEORY'}/>
+        <SimplePaper Description={'THE BIG FIVE PERSONALITY TRAITS ARE THE BEST ACCEPTED AND MOST COMMONLY USED MODEL OF PERSONALITY IN ACADEMIC PSYCHOLOGY.THE RESULTS OF THIS TEST ARE NOT PSYCHOLOGICAL OR PSYCHIATRIC ADVICE OF ANY KIND AND COME WITH NO GUARANTEE OF ACCURACY OR FITNESS FOR A PARTICULAR PURPOSEEXPLORE YOUR PERSONALITY WITH THE HIGHLY RESPECTED BIG FIVE FACTOR MODEL. YOU WILL SEE HOW YOU WILL STACK UP THE FIVE DIMENSIONS : OCEAN'} />
         <Box display="flex" justifyContent="center">
         <Box border={1} {...defaultProps}>
         <Grid container>

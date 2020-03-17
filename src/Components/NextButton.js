@@ -19,7 +19,7 @@ export default function NextButton(){
         className={classes.button}
         endIcon={<Icon>send</Icon>}
       >
-        Send
+        Next
       </Button>
     );
 }

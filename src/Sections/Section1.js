@@ -1,8 +1,9 @@
 import React from 'react';
-import {Grid,Box,} from '@material-ui/core';
+import {Grid,Box, Typography} from '@material-ui/core';
 import Sliders from '../Components/Sliders';
 import NextButton from '../Components/NextButton';
-  
+import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
+import ButtonAppBar from '../Components/AppBar';   
   export default class Section1 extends React.Component {
       state={
           slider1:1,
@@ -130,7 +131,9 @@ import NextButton from '../Components/NextButton';
     }
 
     
-      render(){
+    render(){
+        
+        
       const defaultProps = {
         bgcolor: 'background.paper',
         m: 6,   
@@ -138,8 +141,12 @@ import NextButton from '../Components/NextButton';
         borderColor: 'grey.500',
       };
       
+      let theme = createMuiTheme();
+      theme = responsiveFontSizes(theme);
+      
     return (
       <div>
+          <ButtonAppBar AppBarText={'BIG FIVE FACTOR THEORY'}/>
         <Box display="flex" justifyContent="center">
         <Box border={1} {...defaultProps}>
         <Grid container>

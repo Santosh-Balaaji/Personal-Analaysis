@@ -1,8 +1,7 @@
 import React from 'react';
 import {Grid,Box,} from '@material-ui/core';
-import { makeStyles } from "@material-ui/core/styles";
 import Sliders from '../Components/Sliders';
-
+import NextButton from '../Components/NextButton';
   
   export default class Section1 extends React.Component {
       state={
@@ -135,7 +134,7 @@ import Sliders from '../Components/Sliders';
       const defaultProps = {
         bgcolor: 'background.paper',
         m: 6,   
-        style: { width: '70rem', height: '60rem' },
+        style: { width: '70rem', height: '204rem' },
         borderColor: 'grey.500',
       };
       
@@ -168,6 +167,8 @@ import Sliders from '../Components/Sliders';
         </Grid>
         </Box>
         </Box>
+        <NextButton />
+        
       </div>
     );
       }

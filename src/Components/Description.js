@@ -8,12 +8,12 @@ const useStyles = makeStyles(theme => ({
     flexWrap: 'wrap',
     '& > *': {
       margin: theme.spacing(3),
-      width: '90rem',
+      width: '150rem',
       height: '15rem',
     },
   },
   typo:{
-    margin: '45px'
+    margin: '50px'
   }
 }));
 

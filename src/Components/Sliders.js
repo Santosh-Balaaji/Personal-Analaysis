@@ -11,7 +11,6 @@ const useStyles = makeStyles(theme => ({
         width:'69rem',
         padding: '10px 10px',
         margin: `${theme.spacing(1)}px auto`,
-        boxShadow: '0 3px 5px 2px rgba(135, 135, 171, .3)',
     },
     margin: {
         height: theme.spacing(3),
@@ -54,11 +53,11 @@ const useStyles = makeStyles(theme => ({
 export default function Sliders(props){
     const classes = useStyles();
     return(
-<Paper className={classes.paper} >
+<Paper elevation={5} className={classes.paper} >
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item xs >
           <div className={classes.margin} />
-      <Typography id="discrete-slider-custom" gutterBottom >
+      <Typography variant='h6' id="discrete-slider-custom" gutterBottom >
         {props.sliderTypo}					
       </Typography>
       <div className={classes.slider} style={{marginLeft:'25em'}}>

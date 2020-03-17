@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-class App extends React.Component()
+import Section1 from './Sections/Section1';
+import Section2 from './Sections/Section2';
+class App extends React.Component
 {
   render(){
     return (
       <div className="App">
-        
+        <Section1 />
       </div>
     );
   }

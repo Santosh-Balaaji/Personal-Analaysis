@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
       flexGrow: 1,
     },
     paper: {
-        height: '8rem',
+        height: '10rem',
         width:'69rem',
         padding: '10px 10px',
         margin: `${theme.spacing(1)}px auto`,
@@ -17,33 +17,12 @@ const useStyles = makeStyles(theme => ({
         left: 400
       },
       slider:{
-          width: 400,
+          width: 430,
           left: 400
       }
 
   }));
-  const marks = [
-    {
-      value: 1,
-      label: 'Strongly Disagree',
-    },
-    {
-      value: 2,
-      label: 'Disagree',
-    },
-    {
-      value: 3,
-      label: 'Neutral',
-    },
-    {
-      value: 4,
-      label: 'Agree',
-    },
-    {
-      value: 5,
-      label: 'Strongly Agree',
-    },
-  ];
+  
   
   function valuetext(value) {
     return `${value}`;
@@ -67,7 +46,7 @@ export default function Sliders(props){
         aria-labelledby="discrete-slider-custom"
         step={1}
         valueLabelDisplay="auto"
-        marks={marks}
+        marks={props.marks}
         min={1}
         max={5}
         onChange={(event,value)=>props.onChange(event,value)}

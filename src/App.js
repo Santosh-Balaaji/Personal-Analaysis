@@ -7,7 +7,7 @@ class App extends React.Component
   render(){
     return (
       <div className="App">
-        <Section1 />
+        <Section3 />
       </div>
     );
   }

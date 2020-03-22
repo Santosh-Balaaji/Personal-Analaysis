@@ -3,7 +3,6 @@ import {Grid,Box,Paper} from '@material-ui/core';
 import Sliders from '../Components/Sliders';
 import NextButton from '../Components/NextButton';
 import ButtonAppBar from '../Components/AppBar';   
-import SimplePaper from '../Components/Description';
 export default class Section1 extends React.Component {
     
     state ={

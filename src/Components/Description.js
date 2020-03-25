@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => ({
       margin: theme.spacing(3),
       width: '150rem',
       height: '15rem',
+    backgroundColor: '#e0e0e0',
     },
   },
   typo:{

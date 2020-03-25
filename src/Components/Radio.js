@@ -16,6 +16,7 @@ const useStyles = makeStyles(theme => ({
       width:'69rem',
       padding: '10px 10px',
       margin: `${theme.spacing(1)}px auto`,
+    backgroundColor: '#e0e0e0',
   },
   RadioButton:{
 
@@ -35,13 +36,14 @@ export default function RadioButtonsGroup(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState("");
 
-  const handleChange = event => {
+  const handleChange = (event,value) => {
     setValue(event.target.value);
+    props.onChange(event,value);
   };
 
   
   return (
-<Paper elevation={5} className={classes.paper} >
+<Paper elevation={15} className={classes.paper} >
 <Grid container wrap="nowrap" spacing={2}>
   <Grid item xs >
   <div className={classes.margin} />
@@ -54,7 +56,7 @@ export default function RadioButtonsGroup(props) {
             aria-label="gender"
             name="gender1"
             value={value}
-            onChange={handleChange}
+            onChange={(event,value)=>handleChange(event,value)}
           >
         <Grid container justify="center" spacing={1}>
         <FormGroup row>

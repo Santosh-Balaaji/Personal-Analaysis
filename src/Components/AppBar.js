@@ -7,6 +7,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    backgroundColor: '#232222'
+
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -18,10 +20,9 @@ const useStyles = makeStyles(theme => ({
 
 export default function ButtonAppBar(props) {
   const classes = useStyles();
-
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div >
+      <AppBar position="static" style={{background: '#1f1e1e'}}>
         <Toolbar>
           
           <Typography variant="h6" className={classes.title}>

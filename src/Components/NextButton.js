@@ -14,9 +14,10 @@ export default function NextButton(){
     return(
         <Button
         variant="contained"
-        color="primary"
+        color="secondary"
         size="large"
         className={classes.button}
+        style={{backgroundColor:"#1f1e1e"}}
         endIcon={<Icon>send</Icon>}
       >
         Next

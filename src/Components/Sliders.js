@@ -11,6 +11,8 @@ const useStyles = makeStyles(theme => ({
         width:'69rem',
         padding: '10px 10px',
         margin: `${theme.spacing(1)}px auto`,
+      backgroundColor: '#e0e0e0',
+
     },
     margin: {
         height: theme.spacing(3),
@@ -22,9 +24,11 @@ const useStyles = makeStyles(theme => ({
       }
 
   }));
+
   
   
-  function valuetext(value) {
+  
+    function valuetext(value) {
     return `${value}`;
   }
   

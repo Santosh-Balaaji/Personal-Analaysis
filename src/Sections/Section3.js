@@ -75,7 +75,7 @@ export default class Section1 extends React.Component {
         };
 
         return (
-            <div>
+          <div style={{backgroundColor: 'rgba(0, 0, 0, 0.54)'}}>
                 <ButtonAppBar AppBarText={'BEHAVOIRAL BIASES'}/>
               <Box display="flex" justifyContent="center">
               <Box border={1} {...defaultProps}>

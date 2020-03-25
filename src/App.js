@@ -9,7 +9,7 @@ class App extends React.Component
   render(){
     return (
       <div className="App">
-        <Section3 />
+        <Section2 />
       </div>
     );
   }

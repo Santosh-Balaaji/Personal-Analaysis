@@ -4,9 +4,11 @@ import NextButton from '../Components/NextButton';
 import ButtonAppBar from '../Components/AppBar';   
 import SimplePaper from '../Components/Description';
 import RadioButtonsGroup from '../Components/Radio';
+import {withRouter} from 'react-router-dom';
 
 
-export default class Section1 extends React.Component {
+
+ class Section2 extends React.Component {
     
     state={
         radio1:[],
@@ -40,6 +42,11 @@ export default class Section1 extends React.Component {
             console.log(this.state.radio5);
         });
     }
+
+    handleClick=()=>{
+        this.props.history.push("/Section3");
+    }
+
     render(){
 
         const defaultProps = {
@@ -65,8 +72,10 @@ export default class Section1 extends React.Component {
               </Grid>
               </Box>
               </Box>
-              <NextButton />
+              <NextButton onclick={this.handleClick} />
             </div> 
         );   
     }
 }
+
+export default withRouter(Section2);

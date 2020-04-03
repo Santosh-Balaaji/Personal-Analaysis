@@ -4,7 +4,9 @@ import Sliders from '../Components/Sliders';
 import NextButton from '../Components/NextButton';
 import ButtonAppBar from '../Components/AppBar';   
 import SimplePaper from '../Components/Description';
-export default class Section1 extends React.Component {
+import {withRouter} from 'react-router-dom';
+
+class Section1 extends React.Component {
       state={
           slider1:1,
           slider2:1,
@@ -152,6 +154,11 @@ export default class Section1 extends React.Component {
         });
     }
 
+    handleClick=()=>{
+        this.props.history.push("/Section2");
+    }
+    
+    
     
     render(){
         
@@ -194,10 +201,11 @@ export default class Section1 extends React.Component {
         </Grid>
         </Box>
         </Box>
-        <NextButton />
+        <NextButton onclick={this.handleClick}/>
         
       </div>
     );
       }
   }
-  
+
+  export default withRouter(Section1);

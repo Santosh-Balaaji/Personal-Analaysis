@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     },
   }));
 
-export default function NextButton(){
+export default function NextButton(props){
     const classes = useStyles();
     return(
         <Button
@@ -19,6 +19,7 @@ export default function NextButton(){
         className={classes.button}
         style={{backgroundColor:"#1f1e1e"}}
         endIcon={<Icon>send</Icon>}
+        onClick={props.onclick}
       >
         Next
       </Button>

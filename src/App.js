@@ -10,7 +10,7 @@ class App extends React.Component
     return (
       <div className="App">
         <Switch>
-        <Route exact path='/Section1' component={Section1}/>
+        <Route exact path='/index.html' component={Section1}/>
         <Route exact path='/Section2' component={Section2}/>
         <Route exact path='/Section3' component={Section3}/>
         </Switch>

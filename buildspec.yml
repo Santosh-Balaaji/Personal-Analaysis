@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # install Node 12
+      # install npm
+  pre_build:
+    commands:
+      # install dependencies
+  build:
+    commands:
+      # tests
+      # build

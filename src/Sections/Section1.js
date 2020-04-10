@@ -165,8 +165,8 @@ class Section1 extends React.Component {
         
       const defaultProps = {
         bgcolor: 'background.paper',
-        m: 6,   
-        style: { width: '70rem', height: '244rem' },
+        m: 2,   
+        style: { width: '80%', height: '60%' },
         borderColor: 'grey.500',
       };
       
@@ -174,8 +174,8 @@ class Section1 extends React.Component {
       <div>
           <ButtonAppBar AppBarText={'BIG FIVE FACTOR THEORY'}/>
         <SimplePaper Description={'THE BIG FIVE PERSONALITY TRAITS ARE THE BEST ACCEPTED AND MOST COMMONLY USED MODEL OF PERSONALITY IN ACADEMIC PSYCHOLOGY.THE RESULTS OF THIS TEST ARE NOT PSYCHOLOGICAL OR PSYCHIATRIC ADVICE OF ANY KIND AND COME WITH NO GUARANTEE OF ACCURACY OR FITNESS FOR A PARTICULAR PURPOSEEXPLORE YOUR PERSONALITY WITH THE HIGHLY RESPECTED BIG FIVE FACTOR MODEL. YOU WILL SEE HOW YOU WILL STACK UP THE FIVE DIMENSIONS : OCEAN'} />
-        <Box display="flex" justifyContent="center">
-        <Box border={1} {...defaultProps}>
+        <Box display="flex" justifyContent="center"> 
+        <Box  {...defaultProps}>
         <Grid container>
       <Sliders sliderTypo={'1. HAVE FEW ARTISTIC SKILLS'} onChange={this.onChange1} marks={this.state.marks} />
       <Sliders sliderTypo={'2. INSISTS UNTIL COMPLETING THE WORK IN AN ORGANIZED MANNER'} onChange={this.onChange2} marks={this.state.marks} />

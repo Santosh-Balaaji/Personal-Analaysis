@@ -8,8 +8,8 @@ const useStyles = makeStyles(theme => ({
     flexWrap: 'wrap',
     '& > *': {
       margin: theme.spacing(3),
-      width: '150rem',
-      height: '15rem',
+      width: '100%',
+      height: '20%',
     backgroundColor: '#e0e0e0',
     },
   },

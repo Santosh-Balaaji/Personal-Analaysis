@@ -7,20 +7,19 @@ const useStyles = makeStyles(theme => ({
       flexGrow: 1,
     },
     paper: {
-        height: '10rem',
-        width:'69rem',
-        padding: '10px 10px',
+        height: '100%',
+        width:'100%',
+        padding: '15px 10px',
         margin: `${theme.spacing(1)}px auto`,
       backgroundColor: '#e0e0e0',
 
     },
     margin: {
         height: theme.spacing(3),
-        left: 400
       },
       slider:{
-          width: 430,
-          left: 400
+          width: '80%'
+          
       }
 
   }));
@@ -43,7 +42,7 @@ export default function Sliders(props){
       <Typography variant='h6' id="discrete-slider-custom" gutterBottom >
         {props.sliderTypo}					
       </Typography>
-      <div className={classes.slider} style={{marginLeft:'25em'}}>
+      <div className={classes.slider} style={{marginLeft:'7%'}}>
       <Slider
         defaultValue={1}
         getAriaValueText={valuetext}

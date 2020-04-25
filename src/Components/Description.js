@@ -10,11 +10,11 @@ const useStyles = makeStyles(theme => ({
       margin: theme.spacing(3),
       width: '100%',
       height: '20%',
-    backgroundColor: '#e0e0e0',
     },
   },
   typo:{
-    margin: '50px'
+    fontFamily:"unset",
+        color:"#576071",
   }
 }));
 
@@ -23,9 +23,7 @@ export default function SimplePaper(props) {
 
   return (
     <div className={classes.root}>
-      <Paper elevation={5} >
       <Typography variant="h6" className={classes.typo} >{props.Description} </Typography> 
-          </Paper>
     </div>
   );
 }

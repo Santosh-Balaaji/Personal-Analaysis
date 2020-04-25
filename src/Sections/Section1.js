@@ -1,10 +1,14 @@
 import React from 'react';
-import {Grid,Box,Paper} from '@material-ui/core';
+import {Grid,Box,Paper, Divider} from '@material-ui/core';
 import Sliders from '../Components/Sliders';
 import NextButton from '../Components/NextButton';
 import ButtonAppBar from '../Components/AppBar';   
 import SimplePaper from '../Components/Description';
 import {withRouter} from 'react-router-dom';
+import Dividers from '../Components/Divider';
+import Footer from '../Components/Footer';
+import CustomizedRadios from '../Components/RadioTabs';
+
 
 class Section1 extends React.Component {
       state={
@@ -171,7 +175,7 @@ class Section1 extends React.Component {
       };
       
     return (
-        <div style={{backgroundColor: 'rgba(0, 0, 0, 0.54)'}}>
+        <div >
           <ButtonAppBar AppBarText={'BIG FIVE FACTOR THEORY'}/>
         <SimplePaper Description={'THE BIG FIVE PERSONALITY TRAITS ARE THE BEST ACCEPTED AND MOST COMMONLY USED MODEL OF PERSONALITY IN ACADEMIC PSYCHOLOGY.THE RESULTS OF THIS TEST ARE NOT PSYCHOLOGICAL OR PSYCHIATRIC ADVICE OF ANY KIND AND COME WITH NO GUARANTEE OF ACCURACY OR FITNESS FOR A PARTICULAR PURPOSE TO EXPLORE YOUR PERSONALITY WITH THE HIGHLY RESPECTED BIG FIVE FACTOR MODEL. YOU WILL SEE HOW YOU WILL STACK UP THE FIVE DIMENSIONS : OCEAN'} />
         <Grid container>
@@ -198,7 +202,7 @@ class Section1 extends React.Component {
 
         </Grid>
         <NextButton onclick={this.handleClick}/>
-        
+
       </div>
     );
       }

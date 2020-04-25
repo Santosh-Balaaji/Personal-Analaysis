@@ -5,17 +5,20 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
     button: {
-      margin: theme.spacing(1),
+      marginTop:"8%",
+      width:"17%",
+      height:"58px",
+      borderRadius:"28px",
+      marginBottom:"10%"
     },
   }));
 
 export default function NextButton(props){
     const classes = useStyles();
     return(
-        <Button
+        <Button style={{maxWidth:'30px',maxHeight:'50px',minWidth:'20px',minHeight:'30px'}}
         variant="contained"
         color="secondary"
-        size="large"
         className={classes.button}
         style={{backgroundColor:"#1f1e1e"}}
         endIcon={<Icon>send</Icon>}

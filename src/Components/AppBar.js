@@ -3,33 +3,49 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: '#232222'
-
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
+    color: '#ffffff',
+    position:'left'
   },
 }));
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      // Purple and green play nicely together.
+      main: '#57ae8c',
+    },
+    secondary: {
+      // This is green.A700 as hex.
+      main: "#000000"
+    }
+  }
+});
+ 
 
 export default function ButtonAppBar(props) {
   const classes = useStyles();
   return (
-    <div >
-      <AppBar position="static" style={{background: '#1f1e1e'}}>
+    <ThemeProvider theme={theme}>
+      <AppBar position="static" className={classes.root} >
         <Toolbar>
-          
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6"  className={classes.title}>
             {props.AppBarText}
           </Typography>
         </Toolbar>
       </AppBar>
-    </div>
+    </ThemeProvider>  
   );
 }

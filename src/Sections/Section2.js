@@ -59,10 +59,8 @@ import {withRouter} from 'react-router-dom';
           };
         return (
             <div style={{backgroundColor: 'rgba(0, 0, 0, 0.54)'}}>
-            <ButtonAppBar AppBarText={'BIG FIVE FACTOR THEORY'}/>
-              <SimplePaper Description={'Prospect theory is a behavioral model that shows how people decide between alternatives that involve risk and uncertainty(e.g.% likelihood of gains or losses). It demonstrates that people think in terms of expected utility relative to a reference point (e.g. current wealth) rather than absolute outcomes.'} />
-              <Box display="flex" justifyContent="center">
-              <Box border={1} {...defaultProps}>
+            <ButtonAppBar AppBarText={'PROSPECT THEORY'}/>
+              <SimplePaper Description={'PROSPECT THEORY IS A BEHAVIORAL MODEL THAT SHOWS HOW PEOPLE DECIDE BETWEEN ALTERNATIVES THAT INVOLVE RISK AND UNCERTAINTY(E.G.% LIKELIHOOD OF GAINS OR LOSSES). IT DEMONSTRATES THAT PEOPLE THINK IN TERMS OF EXPECTED UTILITY RELATIVE TO A REFERENCE POINT (E.G. CURRENT WEALTH) RATHER THAN ABSOLUTE OUTCOMES.'} />
               <Grid container>
                 <RadioButtonsGroup radioOption1={'33% chance of winning INR 10000'} radioOption2={'67% chance of winning INR 10000'} onChange={this.onChange1} />
                 <RadioButtonsGroup radioOption1={'80% chance of winning INR 15000'} radioOption2={'20% chance of winning INR 15000'} onChange={this.onChange2}/>
@@ -70,8 +68,6 @@ import {withRouter} from 'react-router-dom';
                 <RadioButtonsGroup radioOption1={'50% chance of winning a three weeks trip to england, france and italy'} radioOption2={'50% chance of winning a one week trip to France'} onChange={this.onChange4} />
                 <RadioButtonsGroup radioOption1={'10% chance of winning a one week trip to england'} radioOption2={'90% chance of winning two week trip to england and germany'}  onChange={this.onChange5}/>
               </Grid>
-              </Box>
-              </Box>
               <NextButton onclick={this.handleClick} />
             </div> 
         );   

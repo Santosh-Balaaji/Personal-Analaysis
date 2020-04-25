@@ -1,7 +1,8 @@
 import React from 'react';
 import {Grid,Paper,Slider,Typography} from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
-
+import CustomizedRadios from "../Components/RadioTabs";
+import Dividers from './Divider';
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
@@ -15,11 +16,15 @@ const useStyles = makeStyles(theme => ({
 
     },
     margin: {
-        height: theme.spacing(3),
+        height: theme.spacing(8),
       },
       slider:{
           width: '80%'
-          
+      },
+      typo:{
+        fontFamily:"unset",
+        color:"#576071",
+        marginBottom:"1.5em"
       }
 
   }));
@@ -35,28 +40,18 @@ const useStyles = makeStyles(theme => ({
 export default function Sliders(props){
     const classes = useStyles();
     return(
-<Paper elevation={5} className={classes.paper} justifyContent="center" >
-        <Grid container wrap="nowrap" spacing={2}>
+        <Grid container wrap="nowrap" spacing={2} justifycontent="center">
           <Grid item xs >
+        <Dividers/>
+
           <div className={classes.margin} />
-      <Typography variant='h6' id="discrete-slider-custom" gutterBottom >
+      <Typography variant='h6' id="discrete-slider-custom" className={classes.typo} gutterBottom >
         {props.sliderTypo}					
       </Typography>
       <div className={classes.slider} style={{marginLeft:'10%'}}>
-      <Slider
-        defaultValue={1}
-        getAriaValueText={valuetext}
-        aria-labelledby="discrete-slider-custom"
-        step={1}
-        valueLabelDisplay="auto"
-        marks={props.marks}
-        min={1}
-        max={5}
-        onChange={(event,value)=>props.onChange(event,value)}
-        />
+      <CustomizedRadios />
         </div>
           </Grid>
         </Grid>
-      </Paper>
     );
 }

@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
     button: {
       marginTop:"8%",
-      width:"17%",
+      width:"15em",
       height:"58px",
       borderRadius:"28px",
       marginBottom:"10%"

@@ -7,7 +7,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormGroup from "@material-ui/core/FormGroup";
 import Tooltip from '@material-ui/core/Tooltip';
-
+import {Typography} from '@material-ui/core';
 const useStyles = makeStyles((theme)=>({
   root: {
     "&:hover": {
@@ -161,6 +161,7 @@ export default function CustomizedRadios() {
         name="customized-radios"
       >
         <FormGroup row>
+        <Typography variant="h6" style={{marginTop:'1.5em' ,marginRight:'1em'}} >Strongly Agree </Typography> 
         <Tooltip title="Strongly Agree">
           <FormControlLabel
             value="Strongly Agree"
@@ -214,6 +215,7 @@ export default function CustomizedRadios() {
             />}
           />
           </Tooltip>
+        <Typography variant="h6" style={{marginTop:'1.5em' ,marginRight:'1em'}} >Strongly Agree </Typography> 
         </FormGroup>
       </RadioGroup>
     </FormControl>

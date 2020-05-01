@@ -112,6 +112,29 @@ const useStyles = makeStyles((theme)=>({
         height:80,
       }
   },
+  Typo:{
+    [theme.breakpoints.down('md')]:{
+      fontSize:'0.7em'
+      },
+      [theme.breakpoints.up('sm')]:{
+        fontSize:'0.7em'
+      },
+      [theme.breakpoints.up('lg')]:{
+        fontSize:'1.5em'
+      }
+  },
+TypoMargin:{
+  [theme.breakpoints.down('md')]:{
+    marginLeft:'-1.5em'
+    },
+    [theme.breakpoints.up('sm')]:{
+      marginLeft:'-1em'
+    },
+    [theme.breakpoints.up('lg')]:{
+      marginLeft:'-0.3em'
+
+    }
+},
   
   icon: {
     borderRadius: "50%",
@@ -161,7 +184,7 @@ export default function CustomizedRadios() {
         name="customized-radios"
       >
         <FormGroup row>
-        <Typography variant="h6" style={{marginTop:'1.5em' ,marginRight:'1em'}} >Strongly Agree </Typography> 
+        <Typography className={classes.Typo} style={{marginTop:'1.5em' ,marginRight:'1em'}} >Agree </Typography> 
         <Tooltip title="Strongly Agree">
           <FormControlLabel
             value="Strongly Agree"
@@ -215,7 +238,7 @@ export default function CustomizedRadios() {
             />}
           />
           </Tooltip>
-        <Typography variant="h6" style={{marginTop:'1.5em' ,marginRight:'1em'}} >Strongly Agree </Typography> 
+        <Typography className={clsx(classes.Typo,classes.TypoMargin)} style={{marginTop:'1.5em'}} >DisAgree </Typography> 
         </FormGroup>
       </RadioGroup>
     </FormControl>

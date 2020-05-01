@@ -21,16 +21,16 @@ const useStyles = makeStyles((theme)=>({
       backgroundColor: "#56ac8a"
     },
     [theme.breakpoints.down('md')]:{
-    width:50,
-    height:50,
+    width:40,
+    height:40,
     },
     [theme.breakpoints.up('sm')]:{
-      width:80,
-      height:80,
+      width:60,
+      height:60,
     },
     [theme.breakpoints.up('lg')]:{
-      width:120,
-      height:120,
+      width:70,
+      height:70,
     }
   },
   StronglyDisAgree:{
@@ -42,16 +42,16 @@ const useStyles = makeStyles((theme)=>({
       
     },
     [theme.breakpoints.down('md')]:{
-    width:50,
-    height:50,
+    width:40,
+    height:40,
     },
     [theme.breakpoints.up('sm')]:{
-      width:80,
-      height:80,
+      width:60,
+      height:60,
     },
     [theme.breakpoints.up('lg')]:{
-      width:120,
-      height:120,
+      width:70,
+      height:70,
     }
   },
   Agree:{
@@ -61,16 +61,16 @@ const useStyles = makeStyles((theme)=>({
       backgroundColor: "#98cdb8",
     },
     [theme.breakpoints.down('md')]:{
-      width:40,
-      height:40,
+      width:30,
+      height:30,
       },
       [theme.breakpoints.up('sm')]:{
-        width:70,
-        height:70,
+        width:50,
+        height:50,
       },
       [theme.breakpoints.up('lg')]:{
-        width:110,
-        height:110,
+        width:60,
+        height:60,
       }
   },
   DisAgree:{
@@ -80,16 +80,16 @@ const useStyles = makeStyles((theme)=>({
       backgroundColor: "#a9708e",
     },
     [theme.breakpoints.down('md')]:{
-      width:40,
-      height:40,
+      width:30,
+      height:30,
       },
       [theme.breakpoints.up('sm')]:{
-        width:70,
-        height:70,
+        width:50,
+        height:50,
       },
       [theme.breakpoints.up('lg')]:{
-        width:110,
-        height:110,
+        width:60,
+        height:60,
       }
   },
   Neutral:
@@ -100,16 +100,16 @@ const useStyles = makeStyles((theme)=>({
       backgroundColor: "#9b9faa",
     },
     [theme.breakpoints.down('md')]:{
-      width:30,
-      height:30,
+      width:25,
+      height:25,
       },
       [theme.breakpoints.up('sm')]:{
         width:40,
         height:40,
       },
       [theme.breakpoints.up('lg')]:{
-        width:80,
-        height:80,
+        width:50,
+        height:50,
       }
   },
   Typo:{
@@ -125,7 +125,8 @@ const useStyles = makeStyles((theme)=>({
   },
 TypoMargin:{
   [theme.breakpoints.down('md')]:{
-    marginLeft:'-1.5em'
+    marginLeft:'-1.5em',
+    marginRight:'-2.5em'
     },
     [theme.breakpoints.up('sm')]:{
       marginLeft:'-1em'
@@ -182,9 +183,9 @@ export default function CustomizedRadios() {
         defaultValue="female"
         aria-label="gender"
         name="customized-radios"
+        row
       >
-        <FormGroup row>
-        <Typography className={classes.Typo} style={{marginTop:'1.5em' ,marginRight:'1em'}} >Agree </Typography> 
+        <Typography className={classes.Typo} style={{marginTop:'1.5em' ,marginRight:'1em',marginLeft:'-1.5em'}} >Agree </Typography> 
         <Tooltip title="Strongly Agree">
           <FormControlLabel
             value="Strongly Agree"
@@ -239,7 +240,6 @@ export default function CustomizedRadios() {
           />
           </Tooltip>
         <Typography className={clsx(classes.Typo,classes.TypoMargin)} style={{marginTop:'1.5em'}} >DisAgree </Typography> 
-        </FormGroup>
       </RadioGroup>
     </FormControl>
   );

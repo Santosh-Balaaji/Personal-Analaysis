@@ -1,72 +1,40 @@
 import React from "react";
-import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormGroup from "@material-ui/core/FormGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import {Paper,Grid,Typography} from "@material-ui/core";
-
+import { makeStyles } from "@material-ui/core/styles";
+import { Paper,Grid} from "@material-ui/core";
+import Dividers from './ComponentDivider';
+import Image1 from '../Images/1.png';
+import Buttons from './Button.js';
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1,
+    display: "flex",
+    flexWrap: "wrap",
+    "& > *": {
+      margin: "11em",
+      width: "150em",
+      height: "50em"
+    }
   },
-  paper: {
-      height: '6rem',
-      width:'80%',
-      padding: '10px 10px',
-      margin: `${theme.spacing(1)}px auto`,
-    backgroundColor: '#e0e0e0',
+  image:{
+    width:'6%',
+    position:'relative',
+    marginTop:'2%'
   },
-  margin: {
-      height: theme.spacing(3)
-    },
-    slider:{
-      width: '80%'
-  },
-  
+  gridPosition:{
+    position:'relative',
+    top:'2%',
+  }
 }));
 
-export default function RadioButtonsGroup(props) {
+export default function Layout() {
   const classes = useStyles();
-  const [value, setValue] = React.useState("");
 
-  const handleChange = (event,value) => {
-    setValue(event.target.value);
-    props.onChange(event,value);
-  };
-
-  
   return (
-<Paper elevation={15} className={classes.paper} justifyContent="center" >
-<Grid container wrap="nowrap" spacing={2}>
-  <Grid item xs >
-  <div className={classes.margin} />
-<Typography variant='h6' id="discrete-slider-custom" gutterBottom >
-  {props.radioQues}
-</Typography>
-<div className={classes.slider} style={{marginLeft:'10%'}}>
-      <FormControl component="fieldset" className={classes.formControl}>
-          <RadioGroup
-            aria-label="gender"
-            name="gender1"
-            value={value}
-            onChange={(event,value)=>handleChange(event,value)}
-            
-          >
-        <Grid container justify="center" spacing={1}>
-        <FormGroup row >
-          <FormControlLabel value="female" control={<Radio style={{width:'4em', height:'4em'}} />}  label={props.radioOption1} />
-          <FormControlLabel value="male" control={<Radio />} label={props.radioOption2}/>
-        </FormGroup>
-      </Grid>
-        </RadioGroup>
-      </FormControl>
-    </div>  
-    </Grid>
-</Grid>
-</Paper>
-
-
+    <div className={classes.root}>
+      <Paper elevation={10} >
+        <img src={Image1} alt="1" className={classes.image} />
+        <Buttons   />
+      <Dividers/>
+      </Paper>
+    </div>
   );
 }

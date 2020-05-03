@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme)=>({
   },
   StronglyAgree:{
     boxShadow:
-      "inset 0 0 0 3px rgba(86, 172, 138, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
+      "inset 0 0 0 5px rgba(86, 172, 138, 1), inset 0 -6px 0 rgba(16,22,26,.1)",
     "input:hover ~ &": {
       backgroundColor: "#56ac8a"
     },
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme)=>({
   },
   StronglyDisAgree:{
     boxShadow:
-      "inset 0 0 0 3px rgba(95, 57, 77, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
+      "inset 0 0 0 5px rgba(95, 57, 77, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
     
     "input:hover ~ &": {
       backgroundColor: "#5f394d",
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme)=>({
   },
   Agree:{
     boxShadow:
-      "inset 0 0 0 3px rgba(152, 205, 184, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
+      "inset 0 0 0 5px rgba(152, 205, 184, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
     "input:hover ~ &": {
       backgroundColor: "#98cdb8",
     },
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme)=>({
   },
   DisAgree:{
     boxShadow:
-      "inset 0 0 0 3px rgba(169, 112, 142, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
+      "inset 0 0 0 5px rgba(169, 112, 142, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
     "input:hover ~ &": {
       backgroundColor: "#a9708e",
     },
@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme)=>({
   Neutral:
   {
     boxShadow:
-      "inset 0 0 0 3px rgba(155, 159, 170, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
+      "inset 0 0 0 5px rgba(155, 159, 170, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
     "input:hover ~ &": {
       backgroundColor: "#9b9faa",
     },
@@ -193,7 +193,7 @@ export default function CustomizedRadios() {
               className={classes.root}
               disableRipple
               color="default"
-              checkedIcon={<span style={{backgroundColor:"#56ac8a"}} className={clsx(classes.checkedIcon,classes.icon,classes.StronglyAgree)} />}
+              checkedIcon={<span style={{backgxroundColor:"#56ac8a"}} className={clsx(classes.checkedIcon,classes.icon,classes.StronglyAgree)} />}
               icon={<span  className={clsx(classes.StronglyAgree,classes.icon)} />}
             />}
           />

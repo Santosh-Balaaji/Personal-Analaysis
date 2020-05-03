@@ -4,16 +4,14 @@ import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: "65%",
+    width: "96%",
     backgroundColor: "#c8cbcd",
-    height: theme.spacing(0.1),
-    marginLeft: "18%",
-    marginTop: '50px',
+    height: "0.1%",
+    marginLeft: "2%",
     position:'relative',
-    top:'15%'
-    
-},
-  
+    top:'12%'
+
+  }
 }));
 
 export default function Dividers() {

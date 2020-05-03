@@ -9,7 +9,6 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexWrap: "wrap",
     "& > *": {
-      margin: "11em",
       width: "150em",
       height: "50em"
     }
@@ -29,12 +28,9 @@ export default function Layout() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Paper elevation={10} >
+    <div justifycontent="center" >
         <img src={Image1} alt="1" className={classes.image} />
-        <Buttons   />
-      <Dividers/>
-      </Paper>
+        <Buttons />
     </div>
   );
 }

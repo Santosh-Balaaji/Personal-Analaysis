@@ -1,14 +1,11 @@
 import React from 'react';
 import {Grid,Paper,Slider,Typography} from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
-import CustomizedRadios from "../Components/RadioTabs";
+import CustomizedRadios from "./RadioTabs";
 import Dividers from './Divider';
+import Buttons from './Button';
 const useStyles = makeStyles(theme => ({
-    root: {
-      flexGrow: 1,
-    },
-   
-    margin: {
+        margin: {
         height: theme.spacing(8),
       },
       slider:{
@@ -25,12 +22,10 @@ const useStyles = makeStyles(theme => ({
   
   
   
-    function valuetext(value) {
-    return `${value}`;
-  }
+    
   
 
-export default function Sliders(props){
+export default function RadioSection(props){
     const classes = useStyles();
     return(
         <Grid container wrap="nowrap" spacing={2} justifycontent="center">
@@ -39,10 +34,10 @@ export default function Sliders(props){
 
           <div className={classes.margin} />
       <Typography variant='h6' id="discrete-slider-custom" className={classes.typo} gutterBottom >
-        {props.sliderTypo}					
+        					CAN YOU CHOOSE ONE?
       </Typography>
       <div className={classes.slider} style={{marginLeft:'10%'}}>
-      <CustomizedRadios />
+        <Buttons option1={props.radioOption1} option2={props.radioOption2} onChange={props.onChange} button1Id={props.button1Id} button2Id={props.button2Id} />
         </div>
           </Grid>
         </Grid>

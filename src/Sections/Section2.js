@@ -23,22 +23,22 @@ import {withRouter} from 'react-router-dom';
             console.log(this.state.radio1);
         });
     }
-    onChange2=(event,value)=>{
+    onChange2=(value)=>{
         this.setState({radio2: value},function(){
             console.log(this.state.radio2);
         });
     }
-    onChange3=(event,value)=>{
+    onChange3=(value)=>{
         this.setState({radio3: value},function(){
             console.log(this.state.radio3);
         });
     }
-    onChange4=(event,value)=>{
+    onChange4=(value)=>{
         this.setState({radio4: value},function(){
             console.log(this.state.radio4);
         });
     }
-    onChange5=(event,value)=>{
+    onChange5=(value)=>{
         this.setState({radio5: value},function(){
             console.log(this.state.radio5);
         });
@@ -62,8 +62,7 @@ import {withRouter} from 'react-router-dom';
             <div>
             <ButtonAppBar AppBarText={'PROSPECT THEORY'}/>
               <SimplePaper Description={'PROSPECT THEORY IS A BEHAVIORAL MODEL THAT SHOWS HOW PEOPLE DECIDE BETWEEN ALTERNATIVES THAT INVOLVE RISK AND UNCERTAINTY(E.G.% LIKELIHOOD OF GAINS OR LOSSES). IT DEMONSTRATES THAT PEOPLE THINK IN TERMS OF EXPECTED UTILITY RELATIVE TO A REFERENCE POINT (E.G. CURRENT WEALTH) RATHER THAN ABSOLUTE OUTCOMES.'} />
-              <RadioSection radioOption1={'33% chance of winning INR 10000'} radioOption2={'67% chance of winning INR 10000'} onChange={this.onChange1} button1Id={'Button1'} button2Id={'Button2'} />  
-              <RadioSection radioOption1={'33% chance of winning INR 10000'} radioOption2={'67% chance of winning INR 10000'} onChange={this.onChange2} button1Id={'Button3'} button2Id={'Button4'}/>  
+              <RadioSection  onChange1={this.onChange1} onChange2={this.onChange2} onChange3={this.onChange3} onChange4={this.onChange4} onChange5={this.onChange5}  />  
               <NextButton onclick={this.handleClick} />
             </div> 
         );   

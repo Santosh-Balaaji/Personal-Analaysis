@@ -6,7 +6,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: "65%",
     backgroundColor: "#c8cbcd",
-    height: theme.spacing(0.1),
+    height: theme.spacing(1),
     marginLeft: "18%",
     marginTop: '50px',
     position:'relative',

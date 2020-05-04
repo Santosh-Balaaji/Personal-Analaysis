@@ -16,13 +16,14 @@ const useStyles = makeStyles((theme)=>({
   },
   StronglyAgree:{
     boxShadow:
-      "inset 0 0 0 5px rgba(86, 172, 138, 1), inset 0 -6px 0 rgba(16,22,26,.1)",
-    "input:hover ~ &": {
-      backgroundColor: "#56ac8a"
-    },
+      "inset 0 0 0 5px rgba(86, 172, 138, 1), inset 0 -4px 0 rgba(16,22,26,.1)",
+      "input:hover ~ &": {
+        backgroundColor: "#56ac8a",
+        
+      }, 
     [theme.breakpoints.down('md')]:{
-    width:40,
-    height:40,
+    width:30,
+    height:30,
     },
     [theme.breakpoints.up('sm')]:{
       width:60,
@@ -42,8 +43,8 @@ const useStyles = makeStyles((theme)=>({
       
     },
     [theme.breakpoints.down('md')]:{
-    width:40,
-    height:40,
+    width:30,
+    height:30,
     },
     [theme.breakpoints.up('sm')]:{
       width:60,
@@ -61,8 +62,8 @@ const useStyles = makeStyles((theme)=>({
       backgroundColor: "#98cdb8",
     },
     [theme.breakpoints.down('md')]:{
-      width:30,
-      height:30,
+      width:25,
+      height:25,
       },
       [theme.breakpoints.up('sm')]:{
         width:50,
@@ -80,8 +81,8 @@ const useStyles = makeStyles((theme)=>({
       backgroundColor: "#a9708e",
     },
     [theme.breakpoints.down('md')]:{
-      width:30,
-      height:30,
+      width:25,
+      height:25,
       },
       [theme.breakpoints.up('sm')]:{
         width:50,
@@ -100,8 +101,8 @@ const useStyles = makeStyles((theme)=>({
       backgroundColor: "#9b9faa",
     },
     [theme.breakpoints.down('md')]:{
-      width:25,
-      height:25,
+      width:20,
+      height:20,
       },
       [theme.breakpoints.up('sm')]:{
         width:40,
@@ -172,18 +173,19 @@ TypoMargin:{
   }
 }));
 
-
-
-export default function CustomizedRadios() {
+export default function CustomizedRadios(props) {
   const classes = useStyles();
-
+  
+  
+     
   return (
-    <FormControl component="fieldset">
+    <FormControl component="fieldset" justifycontent="center">
       <RadioGroup
         defaultValue="female"
         aria-label="gender"
         name="customized-radios"
         row
+        onChange={props.onChange}
       >
         <Typography className={classes.Typo} style={{marginTop:'1.5em' ,marginRight:'1em',marginLeft:'-1.5em',color:'#56ac8a',fontWeight:'600',fontFamily:'Open Sans,Helvetica Neue,Arial'}} >Agree </Typography> 
         <Tooltip title="Strongly Agree">
@@ -191,9 +193,8 @@ export default function CustomizedRadios() {
             value="Strongly Agree"
             control={<Radio
               className={classes.root}
-              disableRipple
               color="default"
-              checkedIcon={<span style={{backgxroundColor:"#56ac8a"}} className={clsx(classes.checkedIcon,classes.icon,classes.StronglyAgree)} />}
+              checkedIcon={<span style={{backgroundColor:"#56ac8a"}} className={clsx(classes.checkedIcon,classes.icon,classes.StronglyAgree)} />}
               icon={<span  className={clsx(classes.StronglyAgree,classes.icon)} />}
             />}
           />
@@ -202,7 +203,6 @@ export default function CustomizedRadios() {
           <FormControlLabel value="Agree" 
           control={<Radio
                     className={classes.root}
-                    disableRipple
                     color="default"
                     checkedIcon={<span style={{backgroundColor:"#98cdb8"}} className={clsx(classes.checkedIcon,classes.icon,classes.Agree)} />}
                     icon={<span  className={clsx(classes.Agree,classes.icon)} />}
@@ -212,7 +212,6 @@ export default function CustomizedRadios() {
           <FormControlLabel value="Neutral" 
           control={<Radio
                     className={classes.root}
-                    disableRipple
                     color="default"
                     checkedIcon={<span style={{backgroundColor:"#9b9faa"}} className={clsx(classes.checkedIcon,classes.icon,classes.Neutral)} />}
                     icon={<span  className={clsx(classes.Neutral,classes.icon)} />}
@@ -221,7 +220,6 @@ export default function CustomizedRadios() {
           <Tooltip title="DisAgree">
           <FormControlLabel value="DisAgree" control={<Radio
                     className={classes.root}
-                    disableRipple
                     color="default"
                     checkedIcon={<span style={{backgroundColor:"#a9708e"}} className={clsx(classes.checkedIcon,classes.icon,classes.DisAgree)} />}
                     icon={<span  className={clsx(classes.DisAgree,classes.icon)} />}
@@ -232,7 +230,6 @@ export default function CustomizedRadios() {
             value="Strongly DisAgree"
             control={<Radio
               className={classes.root}
-              disableRipple
               color="default"
               checkedIcon={<span style={{backgroundColor:"#5f394d"}} className={clsx(classes.checkedIcon,classes.icon,classes.StronglyDisAgree)} />}
               icon={<span  className={clsx(classes.StronglyDisAgree,classes.icon)} />}

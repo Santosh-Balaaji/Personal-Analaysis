@@ -6,35 +6,13 @@ import ButtonAppBar from '../Components/AppBar';
 export default class Section1 extends React.Component {
     
     state ={
-        slider1:1,
-        slider2:1,
-        slider3:1,
-        slider4:1,
-        slider5:1,
-        slider6:1,
-        marks : [
-            {
-              value: 1,
-              label: 'Strongly InAccurate',
-            },
-            {
-              value: 2,
-              label: 'InAccurate',
-            },
-            {
-              value: 3,
-              label: 'Neutral',
-            },
-            {
-              value: 4,
-              label: 'Accurate',
-            },
-            {
-              value: 5,
-              label: 'Strongly Accurate',
-            }
-          ]
-
+        slider1:"",
+        slider2:"",
+        slider3:"",
+        slider4:"",
+        slider5:"",
+        slider6:"",
+        
     }
     onChange1=(event,value)=>{
         this.setState({slider1: value},function(){
@@ -77,12 +55,12 @@ export default class Section1 extends React.Component {
         return (
           <div>
                 <ButtonAppBar AppBarText={'BEHAVOIRAL BIASES'}/>
-            <Sliders sliderTypo={'1. AFTER A PRIOR LOSS, I BECOME MORE RISK AVERSE'} onChange={this.onChange1} marks={this.state.marks} />
-            <Sliders sliderTypo={'2. I AVOID SELLING INVESTMENTS THAT HAVE DECREASE IN VALUE ANS READILY SELL INVESTMENTS THAT HAVE AN INCREASE IN VALUE'} onChange={this.onChange2} marks={this.state.marks}  />
-            <Sliders sliderTypo={'3. I TEND TO TREAT EACH ELEMENT OF MY INVESTMENT PORTFOLIO SEPARATELY'} onChange={this.onChange3} marks={this.state.marks}  />
-            <Sliders sliderTypo={'4. I BELIEVE THAT MY SKILLS AND KNOWLEDGE ARE ADEQUATE THAT CAN HELP ME TO OUT PERFORM THE MARKET'} onChange={this.onChange4} marks={this.state.marks} />
-            <Sliders sliderTypo={'5. I FORECAST THE CHANGES IN PRICES IN THE FUTURE PERIODS ON THE RECENT PRICES'}  onChange={this.onChange5} marks={this.state.marks} />
-            <Sliders sliderTypo={'6. I USUALLY REACT QUICKLY TO THE CHANGES OF THE OTHER INVESTORS DECISIONS AND FOLLOW THEIR REACTIONS IN THE INVESTMENT MARKET'}  onChange={this.onChange6} marks={this.state.marks} />
+            <Sliders sliderTypo={'1. AFTER A PRIOR LOSS, I BECOME MORE RISK AVERSE'} onChange={this.onChange1}  />
+            <Sliders sliderTypo={'2. I AVOID SELLING INVESTMENTS THAT HAVE DECREASE IN VALUE ANS READILY SELL INVESTMENTS THAT HAVE AN INCREASE IN VALUE'} onChange={this.onChange2}   />
+            <Sliders sliderTypo={'3. I TEND TO TREAT EACH ELEMENT OF MY INVESTMENT PORTFOLIO SEPARATELY'} onChange={this.onChange3}  />
+            <Sliders sliderTypo={'4. I BELIEVE THAT MY SKILLS AND KNOWLEDGE ARE ADEQUATE THAT CAN HELP ME TO OUT PERFORM THE MARKET'} onChange={this.onChange4}  />
+            <Sliders sliderTypo={'5. I FORECAST THE CHANGES IN PRICES IN THE FUTURE PERIODS ON THE RECENT PRICES'}  onChange={this.onChange5}  />
+            <Sliders sliderTypo={'6. I USUALLY REACT QUICKLY TO THE CHANGES OF THE OTHER INVESTORS DECISIONS AND FOLLOW THEIR REACTIONS IN THE INVESTMENT MARKET'}  onChange={this.onChange6}  />
               <NextButton />
            </div>   
           );

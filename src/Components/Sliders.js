@@ -42,7 +42,7 @@ export default function Sliders(props){
         {props.sliderTypo}					
       </Typography>
       <div className={classes.slider} style={{marginLeft:'10%'}}>
-      <CustomizedRadios />
+      <CustomizedRadios onChange={props.onChange}/>
         </div>
           </Grid>
         </Grid>

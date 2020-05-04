@@ -12,53 +12,32 @@ import CustomizedRadios from '../Components/RadioTabs';
 
 class Section1 extends React.Component {
       state={
-          slider1:1,
-          slider2:1,
-          slider3:1,
-          slider4:1,
-          slider5:1,
-          slider6:1,
-          slider7:1,
-          slider8:1,
-          slider9:1,
-          slider10:1,
-          slider11:1,
-          slider12:1,
-          slider13:1,
-          slider14:1,
-          slider15:1,
-          slider16:1,
-          slider17:1,
-          slider18:1,
-          slider19:1,
-          slider20:1,
-          marks : [
-            {
-              value: 1,
-              label: 'Strongly Disagree',
-            },
-            {
-              value: 2,
-              label: 'Disagree',
-            },
-            {
-              value: 3,
-              label: 'Neutral',
-            },
-            {
-              value: 4,
-              label: 'Agree',
-            },
-            {
-              value: 5,
-              label: 'Strongly Agree',
-            }
-          ]
+          slider1:"",
+          slider2:"",
+          slider3:"",
+          slider4:"",
+          slider5:"",
+          slider6:"",
+          slider7:"",
+          slider8:"",
+          slider9:"",
+          slider10:"",
+          slider11:"",
+          slider12:"",
+          slider13:"",
+          slider14:"",
+          slider15:"",
+          slider16:"",
+          slider17:"",
+          slider18:"",
+          slider19:"",
+          slider20:"",
+          
 
       }
       
     onChange1=(event,value)=>{
-        this.setState({slider1: value},function(){
+        this.setState({slider1: event.target.value},function(){
             console.log(this.state.slider1);
         });
     }
@@ -179,26 +158,26 @@ class Section1 extends React.Component {
           <ButtonAppBar AppBarText={'BIG FIVE FACTOR THEORY'}/>
         <SimplePaper Description={'THE BIG FIVE PERSONALITY TRAITS ARE THE BEST ACCEPTED AND MOST COMMONLY USED MODEL OF PERSONALITY IN ACADEMIC PSYCHOLOGY.THE RESULTS OF THIS TEST ARE NOT PSYCHOLOGICAL OR PSYCHIATRIC ADVICE OF ANY KIND AND COME WITH NO GUARANTEE OF ACCURACY OR FITNESS FOR A PARTICULAR PURPOSE TO EXPLORE YOUR PERSONALITY WITH THE HIGHLY RESPECTED BIG FIVE FACTOR MODEL. YOU WILL SEE HOW YOU WILL STACK UP THE FIVE DIMENSIONS : OCEAN'} />
         <Grid container>
-      <Sliders sliderTypo={'1. HAVE FEW ARTISTIC SKILLS'} onChange={this.onChange1} marks={this.state.marks} />
-      <Sliders sliderTypo={'2. INSISTS UNTIL COMPLETING THE WORK IN AN ORGANIZED MANNER'} onChange={this.onChange2} marks={this.state.marks} />
-      <Sliders sliderTypo={'3. SOCIALLY OUTGOING'} onChange={this.onChange3} marks={this.state.marks} />
-      <Sliders sliderTypo={'4. USUALLY TRUSTS PEOPLE'} onChange={this.onChange4} marks={this.state.marks}/>
-      <Sliders sliderTypo={'5. RELAXED AND CONTROLS STRESS'}  onChange={this.onChange5} marks={this.state.marks}/>
-      <Sliders sliderTypo={'6. I ENJOY HEARING NEW IDEAS FROM OTHERS'}  onChange={this.onChange6} marks={this.state.marks}/>
-      <Sliders sliderTypo={'7. I MAKE PLANS AND STICK TO THEM'}  onChange={this.onChange7} marks={this.state.marks}/>
-      <Sliders sliderTypo={'8. I AM A LIFE OF PARTY'}  onChange={this.onChange8} marks={this.state.marks}/>
-      <Sliders sliderTypo={'9. I TAKE CARE OF OTHER PEOPLE BEFORE EMOTIONS TAKING CARE OF MYSELF'}  onChange={this.onChange9} marks={this.state.marks}/>
-      <Sliders sliderTypo={'10. I LOVE TO STAY IN PEACE'}  onChange={this.onChange10} marks={this.state.marks}/>
-      <Sliders sliderTypo={'11. HAVE A FERTILE IMAGINATION'}  onChange={this.onChange11} marks={this.state.marks}/>
-      <Sliders sliderTypo={'12. DOES THE WORK WITHOUT ANY PLANS'}  onChange={this.onChange12} marks={this.state.marks}/>
-      <Sliders sliderTypo={'13. RESERVED'}  onChange={this.onChange13} marks={this.state.marks}/>
-      <Sliders sliderTypo={'14. TENDS TO BE CRITICAL TOWARDS OTHERS'}  onChange={this.onChange14} marks={this.state.marks}/>
-      <Sliders sliderTypo={'15. GETS NERVOUS EASILY'}  onChange={this.onChange15} marks={this.state.marks}/>
-      <Sliders sliderTypo={'16. I AM NOT INTERESTED IN ABSTRACT IDEAS'}  onChange={this.onChange16} marks={this.state.marks}/>
-      <Sliders sliderTypo={'17. I DON’T GET MY CHORES DONE RIGHT AWAY'}  onChange={this.onChange17} marks={this.state.marks}/>
-      <Sliders sliderTypo={'18. I HAVE A LITTLE TO SAY'}  onChange={this.onChange18} marks={this.state.marks}/>
-      <Sliders sliderTypo={'19. I AM NOT REALLY INTERESTED IN OTHERS'}  onChange={this.onChange19} marks={this.state.marks}/>
-      <Sliders sliderTypo={'20. I AM OFTEN TROUBLED BY NEGATIVE THOUGHTS'}  onChange={this.onChange20} marks={this.state.marks}/>
+      <Sliders sliderTypo={'1. HAVE FEW ARTISTIC SKILLS'} onChange={this.onChange1}  />
+      <Sliders sliderTypo={'2. INSISTS UNTIL COMPLETING THE WORK IN AN ORGANIZED MANNER'} onChange={this.onChange2}  />
+      <Sliders sliderTypo={'3. SOCIALLY OUTGOING'} onChange={this.onChange3}  />
+      <Sliders sliderTypo={'4. USUALLY TRUSTS PEOPLE'} onChange={this.onChange4} />
+      <Sliders sliderTypo={'5. RELAXED AND CONTROLS STRESS'}  onChange={this.onChange5} />
+      <Sliders sliderTypo={'6. I ENJOY HEARING NEW IDEAS FROM OTHERS'}  onChange={this.onChange6} />
+      <Sliders sliderTypo={'7. I MAKE PLANS AND STICK TO THEM'}  onChange={this.onChange7} />
+      <Sliders sliderTypo={'8. I AM A LIFE OF PARTY'}  onChange={this.onChange8} />
+      <Sliders sliderTypo={'9. I TAKE CARE OF OTHER PEOPLE BEFORE EMOTIONS TAKING CARE OF MYSELF'}  onChange={this.onChange9} />
+      <Sliders sliderTypo={'10. I LOVE TO STAY IN PEACE'}  onChange={this.onChange10} />
+      <Sliders sliderTypo={'11. HAVE A FERTILE IMAGINATION'}  onChange={this.onChange11} />
+      <Sliders sliderTypo={'12. DOES THE WORK WITHOUT ANY PLANS'}  onChange={this.onChange12} />
+      <Sliders sliderTypo={'13. RESERVED'}  onChange={this.onChange13} />
+      <Sliders sliderTypo={'14. TENDS TO BE CRITICAL TOWARDS OTHERS'}  onChange={this.onChange14} />
+      <Sliders sliderTypo={'15. GETS NERVOUS EASILY'}  onChange={this.onChange15} />
+      <Sliders sliderTypo={'16. I AM NOT INTERESTED IN ABSTRACT IDEAS'}  onChange={this.onChange16} />
+      <Sliders sliderTypo={'17. I DON’T GET MY CHORES DONE RIGHT AWAY'}  onChange={this.onChange17} />
+      <Sliders sliderTypo={'18. I HAVE A LITTLE TO SAY'}  onChange={this.onChange18} />
+      <Sliders sliderTypo={'19. I AM NOT REALLY INTERESTED IN OTHERS'}  onChange={this.onChange19} />
+      <Sliders sliderTypo={'20. I AM OFTEN TROUBLED BY NEGATIVE THOUGHTS'}  onChange={this.onChange20} />
 
         </Grid>
         <NextButton onclick={this.handleClick}/>

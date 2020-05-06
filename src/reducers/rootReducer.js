@@ -52,7 +52,7 @@ const rootReducer= (state=initState,action) =>{
 }
     if(action.type ==='ALTER_OCEAN'){
        
-        });
+    
     }
 
     return state;

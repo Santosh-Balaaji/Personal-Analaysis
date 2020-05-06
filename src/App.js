@@ -3,6 +3,7 @@ import './App.css';
 import Section1 from './Sections/Section1';
 import Section3 from './Sections/Section3';
 import Section2 from './Sections/Section2';
+import Section4 from './Sections/Section4';
 import {Switch, Route} from 'react-router-dom';
 class App extends React.Component
 {
@@ -13,6 +14,7 @@ class App extends React.Component
         <Route exact path='/index.html' component={Section1}/>
         <Route exact path='/Section2' component={Section2}/>
         <Route exact path='/Section3' component={Section3}/>
+        <Route exact path='/Section4' component={Section4}/>
         </Switch>
       </div>
     );

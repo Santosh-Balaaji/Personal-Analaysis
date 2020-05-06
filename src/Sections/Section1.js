@@ -8,136 +8,216 @@ import {withRouter} from 'react-router-dom';
 import Dividers from '../Components/Divider';
 import Footer from '../Components/Footer';
 import CustomizedRadios from '../Components/RadioTabs';
+import { connect } from 'react-redux';
 
 
 class Section1 extends React.Component {
       state={
-          slider1:"",
-          slider2:"",
-          slider3:"",
-          slider4:"",
-          slider5:"",
-          slider6:"",
-          slider7:"",
-          slider8:"",
-          slider9:"",
-          slider10:"",
-          slider11:"",
-          slider12:"",
-          slider13:"",
-          slider14:"",
-          slider15:"",
-          slider16:"",
-          slider17:"",
-          slider18:"",
-          slider19:"",
-          slider20:"",
-          
-
+          radio:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+          ocean : [
+            {
+            state: 'OPENNES',
+            positive:0,
+            negative:0
+            
+          }, {
+            state: 'CONSCIENTIOUSNESS',
+            positive:0,
+            negative:0
+          }, {
+            state: 'EXTRAVERSION',
+            positive:0,
+            negative:0
+          }, {
+            state: 'AGREEABLENESS',
+            positive:0,
+            negative:0
+          },
+          {
+            state: 'NEUROTICISM',
+            positive:0,
+            negative:0
+          }]
       }
-      
+    mapToValue(value)
+    {
+    if(value=="Strongly Agree")
+        return 25;
+      if(value=="Agree")
+        return 20;
+      if(value=="Neutral")
+        return 15;
+      if(value=="Disagree")
+        return 10;
+      if(value=="Strongly Disagree")
+        return 5;
+    }
     onChange1=(event,value)=>{
-        this.setState({slider1: event.target.value},function(){
-            console.log(this.state.slider1);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[0] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[0]);
         });
     }
     onChange2=(event,value)=>{
-        this.setState({slider2: value},function(){
-            console.log(this.state.slider2);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[1] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[1]);
         });
     }
     onChange3=(event,value)=>{
-        this.setState({slider3: value},function(){
-            console.log(this.state.slider3);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[2] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[2]);
         });
     }
     onChange4=(event,value)=>{
-        this.setState({slider4: value},function(){
-            console.log(this.state.slider4);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[3] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[3]);
         });
     }
     onChange5=(event,value)=>{
-        this.setState({slider5: value},function(){
-            console.log(this.state.slider5);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[4] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[4]);
         });
     }
     onChange6=(event,value)=>{
-        this.setState({slider6: value},function(){
-            console.log(this.state.slider6);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[5] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[5]);
         });
     }
     onChange7=(event,value)=>{
-        this.setState({slider7: value},function(){
-            console.log(this.state.slider7);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[6] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[6]);
         });
     }
     onChange8=(event,value)=>{
-        this.setState({slider8: value},function(){
-            console.log(this.state.slider8);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[7] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[7]);
         });
     }
     onChange9=(event,value)=>{
-        this.setState({slider9: value},function(){
-            console.log(this.state.slider9);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[8] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[8]);
         });
     }
     onChange10=(event,value)=>{
-        this.setState({slider10: value},function(){
-            console.log(this.state.slider10);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[9] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[9]);
         });
     }
     onChange11=(event,value)=>{
-        this.setState({slider11: value},function(){
-            console.log(this.state.slider11);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[10] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[10]);
         });
     }
     onChange12=(event,value)=>{
-        this.setState({slider12: value},function(){
-            console.log(this.state.slider12);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[11] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[11]);
         });
     }
     onChange13=(event,value)=>{
-        this.setState({slider13: value},function(){
-            console.log(this.state.slider13);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[12] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[12]);
         });
     }
     onChange14=(event,value)=>{
-        this.setState({slider14: value},function(){
-            console.log(this.state.slider14);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[13] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[13]);
         });
     }
     onChange15=(event,value)=>{
-        this.setState({slider15: value},function(){
-            console.log(this.state.slider15);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[14] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[14]);
         });
     }
     onChange16=(event,value)=>{
-        this.setState({slider16: value},function(){
-            console.log(this.state.slider16);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[15] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[15]);
         });
     }
     onChange17=(event,value)=>{
-        this.setState({slider17: value},function(){
-            console.log(this.state.slider17);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[16] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[16]);
         });
     }
     onChange18=(event,value)=>{
-        this.setState({slider18: value},function(){
-            console.log(this.state.slider18);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[17] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[17]);
         });
     }
     onChange19=(event,value)=>{
-        this.setState({slider19: value},function(){
-            console.log(this.state.slider19);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[18] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[18]);
         });
     }
     onChange20=(event,value)=>{
-        this.setState({slider20: value},function(){
-            console.log(this.state.slider20);
+        let newRadio= this.state.radio.slice();
+        let val = this.mapToValue(event.target.value);
+        newRadio[19] = val;
+        this.setState({radio: newRadio},function(){
+            console.log(this.state.radio[19]);
         });
     }
 
     handleClick=()=>{
+        this.setState({
+            
+        });
+        this.props.addOcean(this.state.radio);
         this.props.history.push("/Section2");
     }
     
@@ -187,4 +267,10 @@ class Section1 extends React.Component {
       }
   }
 
-  export default withRouter(Section1);
+  const mapDispatchToProps =(dispatch) =>{
+    return{
+      addOcean: (oceanVal) =>{dispatch({type:'ALTER_OCEAN',oceanVal:oceanVal})}
+    }
+  }
+
+  export default connect(null,mapDispatchToProps)(withRouter(Section1));

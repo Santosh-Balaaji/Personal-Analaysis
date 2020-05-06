@@ -181,7 +181,6 @@ export default function CustomizedRadios(props) {
   return (
     <FormControl component="fieldset" justifycontent="center">
       <RadioGroup
-        defaultValue="female"
         aria-label="gender"
         name="customized-radios"
         row
@@ -217,17 +216,17 @@ export default function CustomizedRadios(props) {
                     icon={<span  className={clsx(classes.Neutral,classes.icon)} />}
                     />} />
           </Tooltip>
-          <Tooltip title="DisAgree">
-          <FormControlLabel value="DisAgree" control={<Radio
+          <Tooltip title="Disagree">
+          <FormControlLabel value="Disagree" control={<Radio
                     className={classes.root}
                     color="default"
                     checkedIcon={<span style={{backgroundColor:"#a9708e"}} className={clsx(classes.checkedIcon,classes.icon,classes.DisAgree)} />}
                     icon={<span  className={clsx(classes.DisAgree,classes.icon)} />}
                     />} />
           </Tooltip>
-          <Tooltip title="Strongly DisAgree">
+          <Tooltip title="Strongly Disagree">
           <FormControlLabel
-            value="Strongly DisAgree"
+            value="Strongly Disagree"
             control={<Radio
               className={classes.root}
               color="default"

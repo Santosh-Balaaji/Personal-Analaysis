@@ -39,6 +39,30 @@ class Section1 extends React.Component {
             negative:0
           }]
       }
+    handleClick=()=>{
+        console.log("inside handleclick");
+        let newOcean = this.state.ocean.slice();
+        newOcean[0].positive = this.state.radio[0]+this.state.radio[5];
+        newOcean[0].negative = this.state.radio[10]+this.state.radio[15]; 
+        
+        newOcean[1].positive = this.state.radio[1]+this.state.radio[6];
+        newOcean[1].negative = this.state.radio[11]+this.state.radio[16];
+        
+        newOcean[2].positive = this.state.radio[2]+this.state.radio[7];
+        newOcean[2].negative = this.state.radio[12]+this.state.radio[17];
+        
+        newOcean[3].positive = this.state.radio[3]+this.state.radio[8];
+        newOcean[3].negative = this.state.radio[13]+this.state.radio[18];
+        
+        newOcean[4].positive = this.state.radio[4]+this.state.radio[9];
+        newOcean[4].negative = this.state.radio[14]+this.state.radio[19];
+        this.setState({
+            
+            ocean:newOcean
+        });
+        this.props.addOcean(this.state.ocean);
+        this.props.history.push("/Section2");
+    }
     mapToValue(value)
     {
     if(value=="Strongly Agree")
@@ -213,13 +237,7 @@ class Section1 extends React.Component {
         });
     }
 
-    handleClick=()=>{
-        this.setState({
-            
-        });
-        this.props.addOcean(this.state.radio);
-        this.props.history.push("/Section2");
-    }
+   
     
     
     

@@ -7,6 +7,11 @@ const initState={
         { character: 'ANCHORING', value: 25 },
         {character:'HERDING', value: 10},
       ],
+      risk : [
+        { character: 'RiskSeeker', value: 25 },
+        { character: 'RiskAverse', value: 30},
+        
+      ],
       ocean : [
         {
         state: 'OPENNES',
@@ -33,15 +38,8 @@ const initState={
       }]
 }
 
-
-
 const rootReducer= (state=initState,action) =>{
     if(action.type ==='ALTER_DATA'){
-      /* return Object.assign({},state,{
-        data:state.data.map(item=>{
-            return item.character === action.character? {character:action.character,value:action.value} : item;
-        })
-       });*/
        let newData= state.data.slice();
        newData.map(item=>{
            if(item.character=== action.character)
@@ -51,8 +49,10 @@ const rootReducer= (state=initState,action) =>{
 
 }
     if(action.type ==='ALTER_OCEAN'){
-       
-    
+       state.ocean= action.oceanVal
+    }
+    if(action.type==='ADD_RISK'){
+        state.risk = action.risk
     }
 
     return state;

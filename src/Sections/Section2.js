@@ -5,59 +5,65 @@ import ButtonAppBar from '../Components/AppBar';
 import SimplePaper from '../Components/Description';
 import RadioSection from '../Components/RadioSection';
 import {withRouter} from 'react-router-dom';
-
+import {connect} from 'react-redux';
 
 
  class Section2 extends React.Component {
     
     state={
-        radio1:[],
-        radio2:[],
-        radio3:[],
-        radio4:[],
-        radio5:[]
+        radio:[],
+        risk:[
+            {character:'RiskSeeker', value:0},
+            {character:'RiskAverse', value:0},
+        ]
     }
     onChange1=(value)=>{
-        alert("Called");
-        this.setState({radio1: value},function(){
-            console.log(this.state.radio1);
-        });
+        let newRadio = this.state.radio.slice();
+            newRadio[0] = value;
+        this.setState({radio: newRadio});
     }
     onChange2=(value)=>{
-        this.setState({radio2: value},function(){
-            console.log(this.state.radio2);
-        });
+        let newRadio = this.state.radio.slice();
+            newRadio[1] = value;
+        this.setState({radio: newRadio});
     }
     onChange3=(value)=>{
-        this.setState({radio3: value},function(){
-            console.log(this.state.radio3);
-        });
+        let newRadio = this.state.radio.slice();
+        newRadio[2] = value;
+        this.setState({radio: newRadio});
     }
     onChange4=(value)=>{
-        this.setState({radio4: value},function(){
-            console.log(this.state.radio4);
-        });
+        let newRadio = this.state.radio.slice();
+        newRadio[3] = value;
+        this.setState({radio: newRadio});
     }
     onChange5=(value)=>{
-        this.setState({radio5: value},function(){
-            console.log(this.state.radio5);
-        });
+        let newRadio = this.state.radio.slice();
+        newRadio[4] = value;
+        this.setState({radio: newRadio});
     }
 
     handleClick=()=>{
+        let newRadio = this.state.radio.slice();
+        let seeker=0;
+        let averse=0;
+        newRadio.map(item=>{
+            if(item ==='option1')
+                seeker+=10;
+            if(item==='option2')
+                averse+=5;
+        });
+        let newRisk= this.state.risk.slice();
+        newRisk[0].value =seeker;
+        newRisk[1].value=averse;
+        this.setState({
+            risk:newRisk
+        });
+        this.props.addRisk(this.state.risk);
         this.props.history.push("/Section3");
     }
 
     render(){
-
-        const defaultProps = {
-            bgcolor: '#f5f5f5',
-            m: 6,   
-            style: { width: '70rem', height: '41rem' },
-            borderColor: 'grey.500',
-            
-
-          };
         return (
             <div>
             <ButtonAppBar AppBarText={'PROSPECT THEORY'}/>
@@ -68,5 +74,9 @@ import {withRouter} from 'react-router-dom';
         );   
     }
 }
-
-export default withRouter(Section2);
+const mapDispatchtoProps=(dispatch)=>{
+    return{
+        addRisk: (risk)=>{dispatch({type:'ADD_RISK',risk: risk})}
+    }
+}
+export default connect(null,mapDispatchtoProps)(withRouter(Section2));

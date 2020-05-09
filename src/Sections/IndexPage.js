@@ -6,13 +6,23 @@ import {Image} from 'react-bootstrap';
 import { makeStyles,Grid } from "@material-ui/core";  
  import "./styles.scss"; 
  import AutoGrid from '../Components/GridComponent';
+import NextButton from '../Components/NextButton'; 
+import {withRouter} from 'react-router-dom';
 
-
-export default class Index extends React.Component{
-
+class Index extends React.Component{
+   
+    constructor(props)
+    {
+        super(props);
+    }
+   
+   
+    handleClick=()=>{
+        this.props.history.push("/Section1");
+    }
     render(){
         
-       
+        
        
         return(
             <div>
@@ -24,10 +34,11 @@ export default class Index extends React.Component{
                      </div>
                     </div>
                     <h1>Hello World</h1>
-                    <AutoGrid/>
-                    
+                    <NextButton onclick={this.handleClick} />
                 
                 </div>
         );
     }
 }
+
+export default withRouter(Index)

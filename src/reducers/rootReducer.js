@@ -1,40 +1,40 @@
 const initState={
     data : [
-        { character: 'LOSS AVERSION', value: 5 },
-        { character: 'REGRET AVOIDANCE', value: 10 },
-        { character: 'MENTAL ACCOUNTING', value: 20 },
-        { character: 'OVER CONFIDENCE', value: 15 },
-        { character: 'ANCHORING', value: 25 },
-        {character:'HERDING', value: 10},
+        { character: 'LOSS AVERSION', value: 0 },
+        { character: 'REGRET AVOIDANCE', value: 0 },
+        { character: 'MENTAL ACCOUNTING', value: 0 },
+        { character: 'OVER CONFIDENCE', value: 0 },
+        { character: 'ANCHORING', value: 0 },
+        {character:'HERDING', value: 0},
       ],
       risk : [
-        { character: 'RiskSeeker', value: 25 },
-        { character: 'RiskAverse', value: 30},
+        { character: 'RiskSeeker', value: 0 },
+        { character: 'RiskAverse', value: 0},
         
       ],
       ocean : [
         {
         state: 'OPENNES',
-        positive:10,
-        negative:25
+        positive:0,
+        negative:0
         
       }, {
         state: 'CONSCIENTIOUSNESS',
-        positive:5,
-        negative:15
+        positive:0,
+        negative:0
       }, {
         state: 'EXTRAVERSION',
-        positive:25,
-        negative:5
+        positive:0,
+        negative:0
       }, {
         state: 'AGREEABLENESS',
-        positive:15,
-        negative:10
+        positive:0,
+        negative:0
       },
       {
         state: 'NEUROTICISM',
-        positive:10,
-        negative:5
+        positive:0,
+        negative:0
       }]
 }
 

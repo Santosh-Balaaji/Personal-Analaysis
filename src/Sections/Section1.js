@@ -12,6 +12,9 @@ import { connect } from 'react-redux';
 
 
 class Section1 extends React.Component {
+    componentDidMount(){
+        window.scrollTo(0, 0)
+    }
       state={
           radio:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
           ocean : [

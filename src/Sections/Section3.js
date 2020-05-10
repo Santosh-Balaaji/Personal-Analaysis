@@ -20,6 +20,9 @@ class Section3 extends React.Component {
     handleClick=()=>{
       this.props.history.push("/Section4");
   }
+  componentDidMount(){
+    window.scrollTo(0, 0)
+}
     onChange1=(event,value)=>{
         
         if(value==="Strongly Agree")

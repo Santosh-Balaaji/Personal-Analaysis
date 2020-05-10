@@ -17,6 +17,9 @@ import {connect} from 'react-redux';
             {character:'RiskAverse', value:0},
         ]
     }
+    componentDidMount(){
+        window.scrollTo(0, 0)
+    }
     onChange1=(value)=>{
         let newRadio = this.state.radio.slice();
             newRadio[0] = value;

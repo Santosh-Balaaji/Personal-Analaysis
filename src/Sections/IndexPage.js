@@ -20,7 +20,9 @@ class Index extends React.Component{
     {
         super(props);
     }
-   
+    componentDidMount(){
+        window.scrollTo(0, 0)
+    }
    
     handleClick=()=>{
         this.props.history.push("/Section1");

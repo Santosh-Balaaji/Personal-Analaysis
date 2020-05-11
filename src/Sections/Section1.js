@@ -1,13 +1,9 @@
 import React from 'react';
-import {Grid,Box,Paper, Divider} from '@material-ui/core';
+import {Grid} from '@material-ui/core';
 import Sliders from '../Components/Sliders';
 import NextButton from '../Components/NextButton';
 import ButtonAppBar from '../Components/AppBar';   
-import SimplePaper from '../Components/Description';
 import {withRouter} from 'react-router-dom';
-import Dividers from '../Components/Divider';
-import Footer from '../Components/Footer';
-import CustomizedRadios from '../Components/RadioTabs';
 import { connect } from 'react-redux';
 
 
@@ -83,181 +79,126 @@ class Section1 extends React.Component {
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[0] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[0]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange2=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[1] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[1]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange3=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[2] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[2]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange4=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[3] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[3]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange5=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[4] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[4]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange6=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[5] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[5]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange7=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[6] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[6]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange8=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[7] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[7]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange9=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[8] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[8]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange10=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[9] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[9]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange11=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[10] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[10]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange12=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[11] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[11]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange13=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[12] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[12]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange14=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[13] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[13]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange15=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[14] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[14]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange16=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[15] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[15]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange17=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[16] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[16]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange18=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[17] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[17]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange19=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[18] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[18]);
-        });
+        this.setState({radio: newRadio});
     }
     onChange20=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[19] = val;
-        this.setState({radio: newRadio},function(){
-            console.log(this.state.radio[19]);
-        });
+        this.setState({radio: newRadio});
     }
-
-   
-    
-    
-    
     render(){
-        
-        
-      const defaultProps = {
-        bgcolor: '#f5f5f5',
-        m: 2,   
-        style: { width: '80%', height: '60%' },
-        borderColor: 'grey.500',
-      };
-      
     return (
         <div >
           <ButtonAppBar AppBarText={'BIG FIVE FACTOR THEORY'}/>
-        <SimplePaper Description={'THE BIG FIVE PERSONALITY TRAITS ARE THE BEST ACCEPTED AND MOST COMMONLY USED MODEL OF PERSONALITY IN ACADEMIC PSYCHOLOGY.THE RESULTS OF THIS TEST ARE NOT PSYCHOLOGICAL OR PSYCHIATRIC ADVICE OF ANY KIND AND COME WITH NO GUARANTEE OF ACCURACY OR FITNESS FOR A PARTICULAR PURPOSE TO EXPLORE YOUR PERSONALITY WITH THE HIGHLY RESPECTED BIG FIVE FACTOR MODEL. YOU WILL SEE HOW YOU WILL STACK UP THE FIVE DIMENSIONS : OCEAN'} />
         <Grid container>
       <Sliders sliderTypo={'1. HAVE FEW ARTISTIC SKILLS'} onChange={this.onChange1}  />
       <Sliders sliderTypo={'2. INSISTS UNTIL COMPLETING THE WORK IN AN ORGANIZED MANNER'} onChange={this.onChange2}  />
@@ -279,10 +220,8 @@ class Section1 extends React.Component {
       <Sliders sliderTypo={'18. I HAVE A LITTLE TO SAY'}  onChange={this.onChange18} />
       <Sliders sliderTypo={'19. I AM NOT REALLY INTERESTED IN OTHERS'}  onChange={this.onChange19} />
       <Sliders sliderTypo={'20. I AM OFTEN TROUBLED BY NEGATIVE THOUGHTS'}  onChange={this.onChange20} />
-
         </Grid>
         <NextButton onclick={this.handleClick}/>
-
       </div>
     );
       }

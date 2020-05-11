@@ -70,7 +70,6 @@ import {connect} from 'react-redux';
         return (
             <div>
             <ButtonAppBar AppBarText={'PROSPECT THEORY'}/>
-              <SimplePaper Description={'PROSPECT THEORY IS A BEHAVIORAL MODEL THAT SHOWS HOW PEOPLE DECIDE BETWEEN ALTERNATIVES THAT INVOLVE RISK AND UNCERTAINTY(E.G.% LIKELIHOOD OF GAINS OR LOSSES). IT DEMONSTRATES THAT PEOPLE THINK IN TERMS OF EXPECTED UTILITY RELATIVE TO A REFERENCE POINT (E.G. CURRENT WEALTH) RATHER THAN ABSOLUTE OUTCOMES.'} />
               <RadioSection  onChange1={this.onChange1} onChange2={this.onChange2} onChange3={this.onChange3} onChange4={this.onChange4} onChange5={this.onChange5}  />  
               <NextButton onclick={this.handleClick} />
             </div> 

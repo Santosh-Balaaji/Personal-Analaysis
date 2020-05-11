@@ -5,26 +5,39 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
     button: {
-      marginTop:"8%",
-      width:"15em",
-      height:"58px",
-      borderRadius:"28px",
-      marginBottom:"10%"
+      
+      borderRadius:'3em',
+      [theme.breakpoints.down('md')]:{
+        width:'7em',
+        height:'3em'
+        },
+        [theme.breakpoints.up('sm')]:{
+          width:'10em',
+          height:'4em'
+        },
+        [theme.breakpoints.up('lg')]:{
+          width:'15em',
+          height:'4em'
+    
+        }
     },
+
   }));
 
 export default function NextButton(props){
     const classes = useStyles();
     return(
-        <Button style={{maxWidth:'30px',maxHeight:'50px',minWidth:'20px',minHeight:'30px'}}
+      <div style={{padding:'100px'}}> 
+        <Button 
         variant="contained"
         color="secondary"
-        className={classes.button}
         style={{backgroundColor:"#1f1e1e"}}
         endIcon={<Icon>send</Icon>}
         onClick={props.onclick}
+        className={classes.button}
       >
         Next
       </Button>
+      </div>
     );
 }

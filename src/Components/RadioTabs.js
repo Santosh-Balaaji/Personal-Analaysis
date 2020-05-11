@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme)=>({
       "input:hover ~ &": {
         backgroundColor: "#56ac8a",
         
-      }, 
+      },
+       
     [theme.breakpoints.down('md')]:{
     width:30,
     height:30,
@@ -32,7 +33,8 @@ const useStyles = makeStyles((theme)=>({
     [theme.breakpoints.up('lg')]:{
       width:70,
       height:70,
-    }
+    },
+    
   },
   StronglyDisAgree:{
     boxShadow:
@@ -113,6 +115,7 @@ const useStyles = makeStyles((theme)=>({
         height:50,
       }
   },
+  
   Typo:{
     [theme.breakpoints.down('md')]:{
       fontSize:'0.7em'
@@ -137,6 +140,11 @@ TypoMargin:{
 
     }
 },
+Pad_Radio:{
+  [theme.breakpoints.down('md')]:{
+    padding:'2px',
+    }
+  },
   
   icon: {
     borderRadius: "50%",
@@ -179,19 +187,20 @@ export default function CustomizedRadios(props) {
   
      
   return (
-    <FormControl component="fieldset" justifycontent="center">
+    <FormControl component="fieldset" justifycontent="center" > 
       <RadioGroup
         aria-label="gender"
         name="customized-radios"
         row
         onChange={props.onChange}
+        
       >
         <Typography className={classes.Typo} style={{marginTop:'1.5em' ,marginRight:'1em',marginLeft:'-1.5em',color:'#56ac8a',fontWeight:'600',fontFamily:'Open Sans,Helvetica Neue,Arial'}} >Agree </Typography> 
         <Tooltip title="Strongly Agree">
           <FormControlLabel
             value="Strongly Agree"
             control={<Radio
-              className={classes.root}
+              className={clsx(classes.root,classes.Pad_Radio)}
               color="default"
               checkedIcon={<span style={{backgroundColor:"#56ac8a"}} className={clsx(classes.checkedIcon,classes.icon,classes.StronglyAgree)} />}
               icon={<span  className={clsx(classes.StronglyAgree,classes.icon)} />}
@@ -201,34 +210,38 @@ export default function CustomizedRadios(props) {
         <Tooltip title="Agree">
           <FormControlLabel value="Agree" 
           control={<Radio
-                    className={classes.root}
+            className={clsx(classes.root,classes.Pad_Radio)}
+
                     color="default"
                     checkedIcon={<span style={{backgroundColor:"#98cdb8"}} className={clsx(classes.checkedIcon,classes.icon,classes.Agree)} />}
                     icon={<span  className={clsx(classes.Agree,classes.icon)} />}
-                    />} />
+                    />} 
+                    className={classes.Pad_Radio}/>
           </Tooltip>
           <Tooltip title="Neutral">          
           <FormControlLabel value="Neutral" 
           control={<Radio
-                    className={classes.root}
+            className={clsx(classes.root,classes.Pad_Radio)}
                     color="default"
                     checkedIcon={<span style={{backgroundColor:"#9b9faa"}} className={clsx(classes.checkedIcon,classes.icon,classes.Neutral)} />}
                     icon={<span  className={clsx(classes.Neutral,classes.icon)} />}
-                    />} />
+                    />} 
+                    />
           </Tooltip>
           <Tooltip title="Disagree">
           <FormControlLabel value="Disagree" control={<Radio
-                    className={classes.root}
+                    className={clsx(classes.root,classes.Pad_Radio)}
                     color="default"
                     checkedIcon={<span style={{backgroundColor:"#a9708e"}} className={clsx(classes.checkedIcon,classes.icon,classes.DisAgree)} />}
                     icon={<span  className={clsx(classes.DisAgree,classes.icon)} />}
-                    />} />
+                    />} 
+                    />
           </Tooltip>
           <Tooltip title="Strongly Disagree">
           <FormControlLabel
             value="Strongly Disagree"
             control={<Radio
-              className={classes.root}
+              className={clsx(classes.root,classes.Pad_Radio)}
               color="default"
               checkedIcon={<span style={{backgroundColor:"#5f394d"}} className={clsx(classes.checkedIcon,classes.icon,classes.StronglyDisAgree)} />}
               icon={<span  className={clsx(classes.StronglyDisAgree,classes.icon)} />}

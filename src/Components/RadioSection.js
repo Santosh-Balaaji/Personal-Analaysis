@@ -42,14 +42,14 @@ const useStyles = makeStyles(theme => ({
       textSizing:
       {
         [theme.breakpoints.down('md')]:{
-          fontSize:'1em',
+          fontSize:'0.7em',
           },
           [theme.breakpoints.up('sm')]:{
-              fontSize:'1.2em',
+              fontSize:'1em',
     
           },
           [theme.breakpoints.up('lg')]:{
-              fontSize:'1.5em',
+              fontSize:'1.3em',
     
           }
       }
@@ -160,11 +160,11 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button1" value="option1" onClick={()=>onButton1Click(props.onChange1)} >
-        <Typography className={classes.buttonSizing}>33% chance of winning INR 10000</Typography>
+        <Typography className={classes.buttonSizing}>33% chance of winning INR 2500<br/> AND <br/> 67% chance of winning INR 2400</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button2" value="option2" onClick={()=>onButton2Click(props.onChange1)}>
-  <Typography className={classes.buttonSizing}>67% chance of winning INR 10000</Typography>
+  <Typography className={classes.buttonSizing}>100% chance of winning INR 2400</Typography>
       </Button>
      
       <Dividers/>
@@ -181,11 +181,11 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button3" value="option1" onClick={()=>onButton3Click(props.onChange2)} >
-        <Typography className={classes.buttonSizing}>80% chance of winning INR 15000</Typography>
+        <Typography className={classes.buttonSizing}>80% chance of winning INR 4000 <br/> AND <br/> 20% chance of winning nothing</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button4" value="option2" onClick={()=>onButton4Click(props.onChange2)}>
-  <Typography className={classes.buttonSizing}>20% chance of winning INR 15000</Typography>
+  <Typography className={classes.buttonSizing}>100% chance of winning INR 3000</Typography>
       </Button>
     <Dividers/>
      

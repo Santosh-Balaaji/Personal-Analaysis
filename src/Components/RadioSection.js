@@ -96,7 +96,6 @@ function onButton5Click(onChange)
   document.getElementById("Button6").style.opacity="0.5";
   document.getElementById("Button5").style.opacity="1";
   var value=document.getElementById("Button5").value;
-  alert(value);
   onChange(value); 
 
 }  
@@ -105,7 +104,6 @@ function onButton6Click(onChange)
   document.getElementById("Button5").style.opacity="0.5";
   document.getElementById("Button6").style.opacity="1";
   var value=document.getElementById("Button6").value;
-  alert(value);
   onChange(value); 
 
 }  
@@ -115,7 +113,6 @@ function onButton7Click(onChange)
   document.getElementById("Button8").style.opacity="0.5";
   document.getElementById("Button7").style.opacity="1";
   var value=document.getElementById("Button7").value;
-  alert(value);
   onChange(value); 
 
 }  
@@ -124,7 +121,6 @@ function onButton8Click(onChange)
   document.getElementById("Button7").style.opacity="0.5";
   document.getElementById("Button8").style.opacity="1";
   var value=document.getElementById("Button8").value;
-  alert(value);
   onChange(value); 
 
 }  
@@ -133,7 +129,6 @@ function onButton9Click(onChange)
   document.getElementById("Button10").style.opacity="0.5";
   document.getElementById("Button9").style.opacity="1";
   var value=document.getElementById("Button9").value;
-  alert(value);
   onChange(value); 
 
 }  
@@ -142,7 +137,6 @@ function onButton10Click(onChange)
   document.getElementById("Button9").style.opacity="0.5";
   document.getElementById("Button10").style.opacity="1";
   var value=document.getElementById("Button10").value;
-  alert(value);
   onChange(value); 
 
 }  

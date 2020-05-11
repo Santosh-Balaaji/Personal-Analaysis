@@ -37,8 +37,8 @@ class Index extends React.Component{
                     <div className="overlay" ></div>
                     <Image src={background} className="image"/>
                     <div className="slider-pos">
-                     <h1 className="slider-text" style={{top:'-3%'}}>Personality Analysis</h1>
-                     <h1 className="slider-text"> Study On Behavioral Finance</h1>
+                     <h1 className="slider-text" style={{top: '17%',left: '28%'}}>Personality Analysis</h1>
+                     <h1 className="slider-text" style={{top: '47%'}}> Study On Behavioral Finance</h1>
                      </div>
                     </div>
                     <div className="body-first-text-header">
@@ -50,13 +50,13 @@ class Index extends React.Component{
                     <div className="front-section-grid" >
                         <GridPage />
                         </div>
-                        <div style={{backgroundColor:'#f3f4f5', color:'#000',height:'27em'}}>
+                        <div style={{backgroundColor:'#f3f4f5', color:'#000'}}>
                         <div style={{fontSize:'2.5rem'}}>
                         INSTRUCTIONS
                             </div>
                             <div >
-                                <Grid container >
-                                    <Grid item xs={12} lg={6} style={{marginTop:'3em'}}>
+                                <Grid container style={{paddingBottom:'7em'}} >
+                                    <Grid item xs={12} lg={6} style={{marginTop:'3em',}}>
                                         <EmojiEmotionsIcon  style={{fontSize:'3em'}}/>
                                         <Typography style={{fontSize:'1.3rem'}}>
                                         Please respond to all the statements sequentially based on your true experiences

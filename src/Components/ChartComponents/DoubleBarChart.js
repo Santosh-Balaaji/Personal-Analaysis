@@ -9,7 +9,7 @@ import {
   Title
 
 } from '@devexpress/dx-react-chart-material-ui';
-
+import {  Animation } from '@devexpress/dx-react-chart';
 
 import { scaleBand } from '@devexpress/dx-chart-core';
 import { ArgumentScale, Stack } from '@devexpress/dx-react-chart';
@@ -57,6 +57,7 @@ const ocean = [{
       <Paper>
         <Chart
           data={chartData}
+          rotated
         >
           <ArgumentScale factory={scaleBand} />
           <ArgumentAxis />
@@ -76,6 +77,7 @@ const ocean = [{
             text="Big Five Factor Theory Report"
           />
           <Stack />
+          <Animation />
           <Legend/>
         </Chart>
       </Paper>

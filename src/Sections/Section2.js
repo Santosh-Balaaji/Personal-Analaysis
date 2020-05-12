@@ -42,7 +42,7 @@ import {connect} from 'react-redux';
         let sumCount=this.computeCount(newCount);        
         this.setState({radio: newRadio},function(){
             this.setState({count:newCount},function(){
-                if(sumCount==5)
+                if(sumCount===5)
                      this.setState({button_disable:false});
             });
         });
@@ -56,7 +56,7 @@ import {connect} from 'react-redux';
             let sumCount=this.computeCount(newCount);        
             this.setState({radio: newRadio},function(){
             this.setState({count:newCount},function(){
-                if(sumCount==5)
+                if(sumCount===5)
                      this.setState({button_disable:false});
             });
         });
@@ -70,7 +70,7 @@ import {connect} from 'react-redux';
 
         this.setState({radio: newRadio},function(){
             this.setState({count:newCount},function(){
-                if(sumCount==5)
+                if(sumCount===5)
                      this.setState({button_disable:false});
             });
         });
@@ -84,7 +84,7 @@ import {connect} from 'react-redux';
 
         this.setState({radio: newRadio},function(){
             this.setState({count:newCount},function(){
-                if(sumCount==5)
+                if(sumCount===5)
                      this.setState({button_disable:false});
             });
         });
@@ -97,7 +97,7 @@ import {connect} from 'react-redux';
         let sumCount=this.computeCount(newCount);        
         this.setState({radio: newRadio},function(){
             this.setState({count:newCount},function(){
-                if(sumCount==5)
+                if(sumCount===5)
                      this.setState({button_disable:false});
             });
         });

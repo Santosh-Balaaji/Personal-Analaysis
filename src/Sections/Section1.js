@@ -36,8 +36,21 @@ class Section1 extends React.Component {
             state: 'NEUROTICISM',
             positive:0,
             negative:0
-          }]
+          }],
+          count:[],
+          button_disable: true,
       }
+
+      computeCount(x){
+        let sum=0;
+        x.forEach(e => {
+            if(e!==undefined)
+                {
+                sum+=e;
+                }
+        });
+        return sum;
+    }
     handleClick=()=>{
         let newOcean = this.state.ocean.slice();
         newOcean[0].positive = this.state.radio[0]+this.state.radio[5];
@@ -63,136 +76,297 @@ class Section1 extends React.Component {
     }
     mapToValue(value)
     {
-    if(value=="Strongly Agree")
+    if(value==="Strongly Agree")
         return 25;
-      if(value=="Agree")
+      if(value==="Agree")
         return 20;
-      if(value=="Neutral")
+      if(value==="Neutral")
         return 15;
-      if(value=="Disagree")
+      if(value==="Disagree")
         return 10;
-      if(value=="Strongly Disagree")
+      if(value==="Strongly Disagree")
         return 5;
     }
     onChange1=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[0] = val;
-        this.setState({radio: newRadio});
+
+         let newCount=this.state.count.slice();
+        newCount[0] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange2=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[1] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[1] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===5)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange3=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[2] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[2] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange4=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[3] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[3] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange5=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[4] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[4] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange6=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[5] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[5] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange7=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[6] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[6] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange8=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[7] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[7] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange9=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[8] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[8] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange10=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[9] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[9] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange11=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[10] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[10] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange12=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[11] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[11] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange13=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[12] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[12] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange14=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[13] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[13] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange15=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[14] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[14] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange16=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[15] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[15] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange17=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[16] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[16] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange18=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[17] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[17] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange19=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[18] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[18] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange20=(event,value)=>{
         let newRadio= this.state.radio.slice();
         let val = this.mapToValue(event.target.value);
         newRadio[19] = val;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[19] =1;
+        let sumCount=this.computeCount(newCount);
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount===20)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     render(){
     return (
@@ -220,7 +394,7 @@ class Section1 extends React.Component {
       <Sliders sliderTypo={'19. I AM NOT REALLY INTERESTED IN OTHERS'}  onChange={this.onChange19} />
       <Sliders sliderTypo={'20. I AM OFTEN TROUBLED BY NEGATIVE THOUGHTS'}  onChange={this.onChange20} />
         </Grid>
-        <NextButton onclick={this.handleClick}/>
+        <NextButton onclick={this.handleClick} disable={this.state.button_disable}/>
       </div>
     );
       }

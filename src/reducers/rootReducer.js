@@ -40,12 +40,7 @@ const initState={
 
 const rootReducer= (state=initState,action) =>{
     if(action.type ==='ALTER_DATA'){
-       let newData= state.data.slice();
-       newData.map(item=>{
-           if(item.character=== action.character)
-                item.value= action.value;
-       })
-       state.data=newData
+       state.data=action.data
 
 }
     if(action.type ==='ALTER_OCEAN'){

@@ -4,10 +4,10 @@ import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: "96%",
+    width: "67%",
     backgroundColor: "#c8cbcd",
     height: "0.1%",
-    marginLeft: "2%",
+    marginLeft: "16%",
     position:'relative',
     marginTop:'4%',
     marginBottom:'3%'

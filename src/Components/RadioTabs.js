@@ -248,7 +248,7 @@ export default function CustomizedRadios(props) {
             />}
           />
           </Tooltip>
-        <Typography className={clsx(classes.Typo,classes.TypoMargin)} style={{marginTop:'1.5em',color:'#5f394d',fontWeight:'600',fontFamily:'Open Sans,Helvetica Neue,Arial'}} >DisAgree </Typography> 
+        <Typography className={clsx(classes.Typo,classes.TypoMargin)} style={{marginTop:'1.5em',color:'#5f394d',fontWeight:'600',fontFamily:'Open Sans,Helvetica Neue,Arial'}} >Disagree </Typography> 
       </RadioGroup>
     </FormControl>
   );

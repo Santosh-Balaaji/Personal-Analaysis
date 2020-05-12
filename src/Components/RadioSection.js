@@ -24,6 +24,8 @@ const useStyles = makeStyles(theme => ({
         
         },
         buttonSizing:{
+           paddingTop:'1em',
+           paddingBottom:'1em',
             [theme.breakpoints.down('md')]:{
                 fontSize:'1em',
                 width:'7em',
@@ -58,8 +60,8 @@ const useStyles = makeStyles(theme => ({
 
   function onButton1Click(onChange)
 {
-  document.getElementById("Button1").style.opacity="1";
-  document.getElementById("Button2").style.opacity="0.5";
+  document.getElementById("Button1").style.opacity="0.5";
+  document.getElementById("Button2").style.opacity="1";
   var value=document.getElementById("Button1").value;
   onChange(value); 
 
@@ -68,8 +70,8 @@ const useStyles = makeStyles(theme => ({
 
 function onButton2Click(onChange)
 {
-  document.getElementById("Button1").style.opacity="0.5";
-  document.getElementById("Button2").style.opacity="1";
+  document.getElementById("Button1").style.opacity="1";
+  document.getElementById("Button2").style.opacity="0.5";
   var value=document.getElementById("Button2").value;
   onChange(value); 
 
@@ -77,32 +79,32 @@ function onButton2Click(onChange)
 
 function onButton3Click(onChange)
 {
-  document.getElementById("Button4").style.opacity="0.5";
-  document.getElementById("Button3").style.opacity="1";
+  document.getElementById("Button4").style.opacity="1";
+  document.getElementById("Button3").style.opacity="0.5";
   var value=document.getElementById("Button3").value;
   onChange(value); 
 
 }  
 function onButton4Click(onChange)
 {
-  document.getElementById("Button3").style.opacity="0.5";
-  document.getElementById("Button4").style.opacity="1";
+  document.getElementById("Button3").style.opacity="1";
+  document.getElementById("Button4").style.opacity="0.5";
   var value=document.getElementById("Button4").value;
   onChange(value); 
 
 }  
 function onButton5Click(onChange)
 {
-  document.getElementById("Button6").style.opacity="0.5";
-  document.getElementById("Button5").style.opacity="1";
+  document.getElementById("Button6").style.opacity="1";
+  document.getElementById("Button5").style.opacity="0.5";
   var value=document.getElementById("Button5").value;
   onChange(value); 
 
 }  
 function onButton6Click(onChange)
 {
-  document.getElementById("Button5").style.opacity="0.5";
-  document.getElementById("Button6").style.opacity="1";
+  document.getElementById("Button5").style.opacity="1";
+  document.getElementById("Button6").style.opacity="0.5";
   var value=document.getElementById("Button6").value;
   onChange(value); 
 
@@ -110,32 +112,32 @@ function onButton6Click(onChange)
 
 function onButton7Click(onChange)
 {
-  document.getElementById("Button8").style.opacity="0.5";
-  document.getElementById("Button7").style.opacity="1";
+  document.getElementById("Button8").style.opacity="1";
+  document.getElementById("Button7").style.opacity="0.5";
   var value=document.getElementById("Button7").value;
   onChange(value); 
 
 }  
 function onButton8Click(onChange)
 {
-  document.getElementById("Button7").style.opacity="0.5";
-  document.getElementById("Button8").style.opacity="1";
+  document.getElementById("Button7").style.opacity="1";
+  document.getElementById("Button8").style.opacity="0.5";
   var value=document.getElementById("Button8").value;
   onChange(value); 
 
 }  
 function onButton9Click(onChange)
 {
-  document.getElementById("Button10").style.opacity="0.5";
-  document.getElementById("Button9").style.opacity="1";
+  document.getElementById("Button10").style.opacity="1";
+  document.getElementById("Button9").style.opacity="0.5";
   var value=document.getElementById("Button9").value;
   onChange(value); 
 
 }  
 function onButton10Click(onChange)
 {
-  document.getElementById("Button9").style.opacity="0.5";
-  document.getElementById("Button10").style.opacity="1";
+  document.getElementById("Button9").style.opacity="1";
+  document.getElementById("Button10").style.opacity="0.5";
   var value=document.getElementById("Button10").value;
   onChange(value); 
 
@@ -146,7 +148,7 @@ function onButton10Click(onChange)
 export default function RadioSection(props){
     const classes = useStyles();
     return(
-        <Grid container wrap="nowrap" spacing={2} justifycontent="center">
+        <Grid container wrap="nowrap"   justifycontent="center">
           <Grid item xs >
         <Dividers/>
 

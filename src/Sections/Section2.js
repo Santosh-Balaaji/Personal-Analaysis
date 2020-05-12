@@ -15,35 +15,92 @@ import {connect} from 'react-redux';
         risk:[
             {character:'RiskSeeker', value:0},
             {character:'RiskAverse', value:0},
-        ]
+        ],
+        count:[],
+        button_disable: true,
     }
+    computeCount(x){
+        let sum=0;
+        x.forEach(e => {
+            if(e!=undefined)
+                {
+                sum+=e;
+                }
+        });
+        return sum;
+    }
+    
     componentDidMount(){
         window.scrollTo(0, 0)
     }
+    
     onChange1=(value)=>{
         let newRadio = this.state.radio.slice();
             newRadio[0] = value;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[0] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount==5)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange2=(value)=>{
+
         let newRadio = this.state.radio.slice();
             newRadio[1] = value;
-        this.setState({radio: newRadio});
+            let newCount=this.state.count.slice();
+            newCount[1] =1;
+            let sumCount=this.computeCount(newCount);        
+            this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount==5)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange3=(value)=>{
         let newRadio = this.state.radio.slice();
         newRadio[2] = value;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[2] =1;
+        let sumCount=this.computeCount(newCount);        
+
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount==5)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange4=(value)=>{
         let newRadio = this.state.radio.slice();
         newRadio[3] = value;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[3] =1;
+        let sumCount=this.computeCount(newCount);        
+
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount==5)
+                     this.setState({button_disable:false});
+            });
+        });
     }
     onChange5=(value)=>{
         let newRadio = this.state.radio.slice();
         newRadio[4] = value;
-        this.setState({radio: newRadio});
+        let newCount=this.state.count.slice();
+        newCount[4] =1;
+        let sumCount=this.computeCount(newCount);        
+        this.setState({radio: newRadio},function(){
+            this.setState({count:newCount},function(){
+                if(sumCount==5)
+                     this.setState({button_disable:false});
+            });
+        });
     }
 
     handleClick=()=>{
@@ -67,11 +124,14 @@ import {connect} from 'react-redux';
     }
 
     render(){
+        
         return (
             <div>
             <ButtonAppBar AppBarText={'PROSPECT THEORY'}/>
               <RadioSection  onChange1={this.onChange1} onChange2={this.onChange2} onChange3={this.onChange3} onChange4={this.onChange4} onChange5={this.onChange5}  />  
-              <NextButton onclick={this.handleClick} />
+             
+              <NextButton  onclick={this.handleClick} disable={this.state.button_disable}  />
+              
             </div> 
         );   
     }

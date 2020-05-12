@@ -39,7 +39,6 @@ class Section1 extends React.Component {
           }]
       }
     handleClick=()=>{
-        console.log("inside handleclick");
         let newOcean = this.state.ocean.slice();
         newOcean[0].positive = this.state.radio[0]+this.state.radio[5];
         newOcean[0].negative = this.state.radio[10]+this.state.radio[15]; 

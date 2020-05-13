@@ -15,30 +15,30 @@ class Section1 extends React.Component {
           radio:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
           ocean : [
             {
-            state: 'OPENNES',
+            state: 'OPEN',
             positive:0,
             negative:0
             
           }, {
-            state: 'CONSCIENTIOUSNESS',
+            state: 'CONSCIEN',
             positive:0,
             negative:0
           }, {
-            state: 'EXTRAVERSION',
+            state: 'EXTRA',
             positive:0,
             negative:0
           }, {
-            state: 'AGREEABLENESS',
+            state: 'AGREE',
             positive:0,
             negative:0
           },
           {
-            state: 'NEUROTICISM',
+            state: 'NEURO',
             positive:0,
             negative:0
           }],
           count:[],
-          button_disable: true,
+          button_disable: false,
       }
 
       computeCount(x){

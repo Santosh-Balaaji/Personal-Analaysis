@@ -61,7 +61,7 @@
     font-weight: 400;
     line-height: 1.75;
     letter-spacing: 0.00938em;
-    color:white;
+    color:black;
     padding: 12%;
     text-align: justify;
     padding-top: 2%;
@@ -78,6 +78,16 @@
     color:white;
     
 }
+.header-text-font-result{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.334;
+    letter-spacing: 0em;
+    color:initial;
+    color:white;
+    background-color: #2a2a4a;
+    
+}
 .paper-text{
     font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
     font-size: 1.1em;
@@ -91,6 +101,14 @@
 .front-section-grid{
     background:linear-gradient(115deg,#3b3c8c,#5457ed);   
     padding: 100px 20px;
+}
+
+.result-div{
+    padding: 50px;
+    background-color: whitesmoke;
+    color: black;
+    font-family: inherit;
+    font-size: 1em;
 }
 
 

@@ -150,7 +150,6 @@ if(value==="Strongly Agree")
     }
     render(){
         
-      console.log(this.props);
         return (
           <div>
                 <ButtonAppBar AppBarText={'BEHAVOIRAL BIASES'}/>

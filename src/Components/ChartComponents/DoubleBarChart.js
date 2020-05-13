@@ -22,20 +22,20 @@ const ocean = [{
   negative:25
   
 }, {
-  state: 'CONSCIENTIOUSNESS',
+  state: 'CONSCIEN',
   positive:5,
   negative:15
 }, {
-  state: 'EXTRAVERSION',
+  state: 'EXTRA',
   positive:25,
   negative:5
 }, {
-  state: 'AGREEABLENESS',
+  state: 'AGREE',
   positive:15,
   negative:10
 },
 {
-  state: 'NEUROTICISM',
+  state: 'NEURO',
   positive:10,
   negative:5
 }];
@@ -78,7 +78,7 @@ const ocean = [{
           />
           <Stack />
           <Animation />
-          <Legend/>
+          <Legend verticalAlignment="bottom" horizontalAlignment="center"/>
         </Chart>
       </Paper>
     );

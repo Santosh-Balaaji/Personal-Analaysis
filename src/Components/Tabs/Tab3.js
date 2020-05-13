@@ -49,9 +49,7 @@ return result
 }
     render(){
     const {data} =this.props;
-    console.log(data);
     var result= this.computeResult(data);
-    console.log(result);
 return(    
     <div >
 

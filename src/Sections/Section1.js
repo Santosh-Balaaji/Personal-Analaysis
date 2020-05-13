@@ -38,7 +38,7 @@ class Section1 extends React.Component {
             negative:0
           }],
           count:[],
-          button_disable: false,
+          button_disable: true,
       }
 
       computeCount(x){

@@ -183,11 +183,11 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button3" value="option1" onClick={()=>onButton3Click(props.onChange2)} >
-        <Typography className={classes.buttonSizing}>80% chance of winning INR 4000 <br/> AND <br/> 20% chance of winning nothing</Typography>
+        <Typography className={classes.buttonSizing}>0.1% chance of winning INR 4000<br/> AND<br/> 99.9% chance of winning nothing</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button4" value="option2" onClick={()=>onButton4Click(props.onChange2)}>
-  <Typography className={classes.buttonSizing}>100% chance of winning INR 3000</Typography>
+  <Typography className={classes.buttonSizing}>10% chance of winning INR 3000 <br/> AND<br/> 90% chance of winning nothing</Typography>
       </Button>
     <Dividers/>
      

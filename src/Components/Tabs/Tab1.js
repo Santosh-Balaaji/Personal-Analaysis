@@ -2,8 +2,9 @@ import React from 'react';
 import GridComponent from '../GridComponent';
 import DoubleBar from '../DevExtremeCharts/DoubleBarChart';
 
-export default function Tab1(){
+class Tab1 extends React.Component{
 
+    render(){
 return(    
     <div >
 
@@ -16,3 +17,8 @@ return(
 )
 
 }
+}
+
+
+
+  export default Tab1;

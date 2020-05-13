@@ -11,6 +11,8 @@ import PieChart from '../Components/ChartComponents/PieChart';
 import GridComponent from '../Components/GridComponent';
 import Tab1 from '../Components/Tabs/Tab1';
 import Tab3 from '../Components/Tabs/Tab3';
+import Tab2 from '../Components/Tabs/Tab2';
+
 
 
 function TabPanel(props) {
@@ -85,7 +87,7 @@ export default function SimpleTabs() {
       <Tab1 />
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <div><PieChart /></div>
+      <Tab2 />
       </TabPanel>
       <TabPanel value={value} index={2}>
       <Tab3 />

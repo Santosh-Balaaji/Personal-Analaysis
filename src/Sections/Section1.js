@@ -374,20 +374,20 @@ class Section1 extends React.Component {
           <ButtonAppBar AppBarText={'BIG FIVE FACTOR THEORY'}/>
         <Grid container>
       <Sliders sliderTypo={'1. HAVE FEW ARTISTIC SKILLS'} onChange={this.onChange1}  />
-      <Sliders sliderTypo={'2. INSISTS UNTIL COMPLETING THE WORK IN AN ORGANIZED MANNER'} onChange={this.onChange2}  />
+      <Sliders sliderTypo={'2. INSIST UNTIL THE WORK IS COMPLETED IN AN ORGANIZED MANNER'} onChange={this.onChange2}  />
       <Sliders sliderTypo={'3. SOCIALLY OUTGOING'} onChange={this.onChange3}  />
-      <Sliders sliderTypo={'4. USUALLY TRUSTS PEOPLE'} onChange={this.onChange4} />
-      <Sliders sliderTypo={'5. RELAXED AND CONTROLS STRESS'}  onChange={this.onChange5} />
-      <Sliders sliderTypo={'6. I ENJOY HEARING NEW IDEAS FROM OTHERS'}  onChange={this.onChange6} />
+      <Sliders sliderTypo={'4. USUALLY TRUST PEOPLE'} onChange={this.onChange4} />
+      <Sliders sliderTypo={'5. STAY RELAXED AND MANAGE STRESS'}  onChange={this.onChange5} />
+      <Sliders sliderTypo={'6. ENJOY LISTENING TO NEW IDEAS FROM OTHERS'}  onChange={this.onChange6} />
       <Sliders sliderTypo={'7. I MAKE PLANS AND STICK TO THEM'}  onChange={this.onChange7} />
       <Sliders sliderTypo={'8. I AM A LIFE OF PARTY'}  onChange={this.onChange8} />
-      <Sliders sliderTypo={'9. I TAKE CARE OF OTHER PEOPLE BEFORE EMOTIONS TAKING CARE OF MYSELF'}  onChange={this.onChange9} />
+      <Sliders sliderTypo={"9. TAKE CARE OF OTHER PEOPLE'S EMOTIONS BEFORE TAKING CARE OF MYSELF"}  onChange={this.onChange9} />
       <Sliders sliderTypo={'10. I LOVE TO STAY IN PEACE'}  onChange={this.onChange10} />
       <Sliders sliderTypo={'11. HAVE A FERTILE IMAGINATION'}  onChange={this.onChange11} />
-      <Sliders sliderTypo={'12. DOES THE WORK WITHOUT ANY PLANS'}  onChange={this.onChange12} />
+      <Sliders sliderTypo={'12. DOES THE WORK WITHOUT PRIOR PLANS'}  onChange={this.onChange12} />
       <Sliders sliderTypo={'13. RESERVED'}  onChange={this.onChange13} />
-      <Sliders sliderTypo={'14. TENDS TO BE CRITICAL TOWARDS OTHERS'}  onChange={this.onChange14} />
-      <Sliders sliderTypo={'15. GETS NERVOUS EASILY'}  onChange={this.onChange15} />
+      <Sliders sliderTypo={'14. TEND TO BE CRITICAL TOWARDS OTHERS'}  onChange={this.onChange14} />
+      <Sliders sliderTypo={'15. GET NERVOUS EASILY'}  onChange={this.onChange15} />
       <Sliders sliderTypo={'16. I AM NOT INTERESTED IN ABSTRACT IDEAS'}  onChange={this.onChange16} />
       <Sliders sliderTypo={'17. I DON’T GET MY CHORES DONE RIGHT AWAY'}  onChange={this.onChange17} />
       <Sliders sliderTypo={'18. I HAVE A LITTLE TO SAY'}  onChange={this.onChange18} />

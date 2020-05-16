@@ -238,7 +238,7 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button9" value="option1" onClick={()=>onButton9Click(props.onChange5)} >
-        <Typography className={classes.buttonSizing}>10% chance of winning a four week trip to england</Typography>
+        <Typography className={classes.buttonSizing}>10% chance of winning four week trip to england</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button10" value="option2" onClick={()=>onButton10Click(props.onChange5)}>

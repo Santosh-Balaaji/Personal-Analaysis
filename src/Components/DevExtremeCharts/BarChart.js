@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Chart, Series,Legend } from 'devextreme-react/chart';
+import { Chart, Series,Legend,Export } from 'devextreme-react/chart';
 import {connect} from 'react-redux';
 
 class BarChart extends React.Component {
@@ -21,6 +21,7 @@ class BarChart extends React.Component {
           color="#f5564a"
            />
            <Legend verticalAlignment="bottom" horizontalAlignment="center"></Legend>
+           <Export enabled={true} />
       </Chart>
     );
   }

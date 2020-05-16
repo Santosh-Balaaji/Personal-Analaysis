@@ -21,9 +21,7 @@ class DoubleBarChart extends React.Component {
           hoverMode="allArgumentPoints"
           selectionMode="allArgumentPoints"
         >
-          <Label visible={true}>
-            <Format type="fixedPoint" precision={0} />
-          </Label>
+          
         </CommonSeriesSettings>
         <Series
           argumentField="state"

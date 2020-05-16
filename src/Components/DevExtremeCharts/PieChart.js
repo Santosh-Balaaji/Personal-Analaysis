@@ -34,7 +34,7 @@ class Section2Chart extends React.Component {
           argumentField="character"
           valueField="value"
         />
-          
+          <Export enabled={true} />
       </PieChart>
     );
   }

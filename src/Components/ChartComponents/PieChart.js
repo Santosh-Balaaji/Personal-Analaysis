@@ -6,9 +6,13 @@ import {
   Tooltip,
   Legend,
   Title,
+  
 } from '@devexpress/dx-react-chart-material-ui';
 import {connect} from 'react-redux';
 import { EventTracker } from '@devexpress/dx-react-chart';
+import {
+  Export
+} from 'devextreme-react/pie-chart';
 
 const data = [
     { character: 'RiskSeeker', value: 25 },
@@ -41,7 +45,7 @@ class PieChart extends React.PureComponent {
           <EventTracker />
           <Tooltip />
           <Legend />
-
+          <Export enabled={true} />
         </Chart>
       </Paper>
     );

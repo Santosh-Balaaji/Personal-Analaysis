@@ -1,9 +1,11 @@
 import React from 'react';
 import GridComponent from '../GridComponent';
-import PieChart from '../DevExtremeCharts/PieChart';
-//import PieChart from '../ChartComponents/PieChart'; 
+//import PieChart from '../DevExtremeCharts/PieChart';
+import PieChart from '../ChartComponents/PieChart'; 
 import {connect} from 'react-redux';
 import GrdiSection2 from '../Section2Grid';
+import doughNut from '../DevExtremeCharts/Doughnut';
+import Doughnut from '../DevExtremeCharts/Doughnut';
 
 class  Tab2 extends React.Component{
 constructor(props){
@@ -35,7 +37,7 @@ constructor(props){
     <div >
         
         <div >
-        <PieChart />
+        <Doughnut />
                 </div>
                 <div className="result-div" style={{marginTop:'2%',fontFamily:'unset',fontSize:'1.2em'}}>
                 As per your responses, you seem to be a Risk {result[0]} Person 

@@ -43,6 +43,8 @@ constructor(props){
         <div>
             <GrdiSection2 header={result[0]} body={result[1]} />
         </div>
+        <div className="bottom-div">While looking at your responses, you would have probably realized that these are not truly black-and-white precision.
+            </div>
        
     </div>
 )

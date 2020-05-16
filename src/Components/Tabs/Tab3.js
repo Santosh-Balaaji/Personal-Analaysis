@@ -31,7 +31,7 @@ data.forEach(i=>{
 });
 
 if(count==1)
-    result="As per your response, you seem to have high degree of <b>"+temp_array[0]+"</b>";
+    result="As per your response, you seem to have high degree of "+temp_array[0];
 if(count==2)
     result="As per your response, you seem to have high degree of "+temp_array[0]+" and "+temp_array[1];
 if(count==3)
@@ -61,6 +61,9 @@ return(
         <GridComponent />
 
         </div>
+        <div className="bottom-div">
+        The human brain is the epicentre of what we value, why we behave the way we do and how we make decisions. But the brain operates on circuitry with limited processing capacity. As a result, we rely on mental shortcuts to navigate everyday life.
+            </div>
     </div>
 )
 }

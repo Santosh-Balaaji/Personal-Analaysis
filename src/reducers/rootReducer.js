@@ -14,25 +14,25 @@ const initState={
       ],
       ocean : [
         {
-        state: 'OPEN',
+        state: 'N',
         positive:0,
         negative:0
         
       }, {
-        state: 'CONSCIEN',
+        state: 'A',
         positive:0,
         negative:0
       }, {
-        state: 'EXTRA',
+        state: 'E',
         positive:0,
         negative:0
       }, {
-        state: 'AGREE',
+        state: 'C',
         positive:0,
         negative:0
       },
       {
-        state: 'NEURO',
+        state: 'O',
         positive:0,
         negative:0
       }]

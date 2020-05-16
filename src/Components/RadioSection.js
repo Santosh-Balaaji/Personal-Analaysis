@@ -162,11 +162,11 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button1" value="option1" onClick={()=>onButton1Click(props.onChange1)} >
-        <Typography className={classes.buttonSizing}>33% chance of winning INR 2500<br/> AND <br/> 67% chance of winning INR 2400</Typography>
+        <Typography className={classes.buttonSizing}>33% chance of winning INR 2550<br/> AND <br/> 67% chance of winning INR 2500</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button2" value="option2" onClick={()=>onButton2Click(props.onChange1)}>
-  <Typography className={classes.buttonSizing}>100% chance of winning INR 2400</Typography>
+  <Typography className={classes.buttonSizing}>100% chance of winning INR 2500</Typography>
       </Button>
      
       <Dividers/>
@@ -183,11 +183,11 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button3" value="option1" onClick={()=>onButton3Click(props.onChange2)} >
-        <Typography className={classes.buttonSizing}>0.1% chance of winning INR 4000<br/> AND<br/> 99.9% chance of winning nothing</Typography>
+        <Typography className={classes.buttonSizing}>65% chance of winning INR 5500</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button4" value="option2" onClick={()=>onButton4Click(props.onChange2)}>
-  <Typography className={classes.buttonSizing}>10% chance of winning INR 3000 <br/> AND<br/> 90% chance of winning nothing</Typography>
+  <Typography className={classes.buttonSizing}>95% chance of winning INR 3000</Typography>
       </Button>
     <Dividers/>
      
@@ -202,11 +202,11 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button5" value="option1" onClick={()=>onButton5Click(props.onChange3)} >
-        <Typography className={classes.buttonSizing}>0.2% chance of winning INR 50000</Typography>
+        <Typography className={classes.buttonSizing}>5% chance of winning INR 6000</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button6" value="option2" onClick={()=>onButton6Click(props.onChange3)}>
-  <Typography className={classes.buttonSizing}>99.8% chance of winning INR 50000</Typography>
+  <Typography className={classes.buttonSizing}>35% chance of winning INR 3500</Typography>
       </Button>
       <Dividers/>
      
@@ -220,11 +220,11 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button7" value="option1" onClick={()=>onButton7Click(props.onChange4)} >
-        <Typography className={classes.buttonSizing}>50% chance of winning a three weeks trip to england, france and italy</Typography>
+        <Typography className={classes.buttonSizing}>35% chance of winning a three week trip to England, France and Italy <br/>AND <br/> 50% chance of winning nothing</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button8" value="option2" onClick={()=>onButton8Click(props.onChange4)}>
-  <Typography className={classes.buttonSizing}>50% chance of winning a one week trip to France</Typography>
+  <Typography className={classes.buttonSizing}>85% chance of winning a one week trip to England</Typography>
       </Button>
       <Dividers/>
      
@@ -238,7 +238,7 @@ export default function RadioSection(props){
       <Typography className={classes.textSizing}>OR</Typography>
       <Grid >
       <Button variant="contained" style={{right:'5%'}} color="primary" id="Button9" value="option1" onClick={()=>onButton9Click(props.onChange5)} >
-        <Typography className={classes.buttonSizing}>10% chance of winning a one week trip to england</Typography>
+        <Typography className={classes.buttonSizing}>10% chance of winning a four week trip to england</Typography>
       </Button>
 
       <Button variant="contained" color="primary" style={{left:'5%'}} id="Button10" value="option2" onClick={()=>onButton10Click(props.onChange5)}>
